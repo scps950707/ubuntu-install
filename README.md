@@ -26,5 +26,5 @@
 ###deb_package
 - dropbox
 - chrome
-- nvidia
+- nvidia(only download)
 - remarkable
