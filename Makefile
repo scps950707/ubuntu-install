@@ -5,7 +5,7 @@ help:
 	@echo "git/vim/exuberant-ctags/valgrind/dockyunity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
-	@echo "grub-customizer"
+	@echo "grub-customizer/gconf-editor/rar"
 	@echo "-----------------------------------\n"
 	@echo "git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -24,7 +24,9 @@ install:grub-customizer indicator-sound-switcher
 	sudo apt-get -y install eclipse
 	sudo apt-get -y install filezilla
 	sudo apt-get -y install codeblocks
+	sudo apt-get -y install rar
 	sudo apt-get -y install vlc
+	sudo apt-get -y install gconf-editor
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
