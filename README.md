@@ -17,6 +17,7 @@
 	vlc
 	grub-customizer
 	indicator-sound-switcher
+	rar
 	
 	git_config:
 
