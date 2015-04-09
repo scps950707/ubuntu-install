@@ -19,7 +19,7 @@ install:grub-customizer indicator-sound-switcher deb_package
 	sudo apt-get -y install vim
 	sudo apt-get -y install exuberant-ctags
 	sudo apt-get -y install valgrind
-	sudo apt-get -y install docky
+	#sudo apt-get -y install docky
 	sudo apt-get -y install unity-tweak-tool
 	sudo apt-get -y install classicmenu-indicator
 	sudo apt-get -y install synaptic
