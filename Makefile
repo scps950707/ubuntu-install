@@ -5,7 +5,7 @@ help:
 	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
-	@echo "grub-customizer/gconf-editor/rar/Cairo-Dock"
+	@echo "grub-customizer/gconf-editor/rar/docky"
 	@echo "-----------------------------------\n"
 	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -15,13 +15,13 @@ help:
 	@echo "-----------------------------------\n"
 	@echo "(4)set_vim/reset_vim\n"
 	@echo "(5)old:\n-----------------------------------"
-	@echo "docky"
+	@echo "Cairo-Dock/compizconfig-settings-manager"
 	@echo "-----------------------------------\n"
 
 
 
 
-install:grub-customizer indicator-sound-switcher deb_package
+install:grub-customizer indicator-sound-switcher deb_package git_config
 	sudo apt-get -y install git
 	sudo apt-get -y install vim
 	sudo apt-get -y install exuberant-ctags
@@ -36,6 +36,7 @@ install:grub-customizer indicator-sound-switcher deb_package
 	sudo apt-get -y install rar
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
+	sudo apt-get -y install docky
 
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
@@ -51,6 +52,7 @@ Cairo-Dock:
 	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
 	sudo apt-get update 
 	sudo apt-get -y install cairo-dock cairo-dock-plug-ins 
+
 git_config:
 	git config --global user.name "scps950707"
 	git config --global user.email "scps950707@gmail.com"
@@ -78,5 +80,4 @@ reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
 old:
-	sudo apt-get -y install docky
-
+	sudo apt-get -y install compizconfig-settings-manager

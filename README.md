@@ -16,7 +16,7 @@
 - grub-customizer
 - indicator-sound-switcher
 - rar
-- Cairo-Dock
+- docky
 	
 ###git_config
 - name
@@ -33,4 +33,5 @@
 
 
 ###old
-- docky
+- compizconfig-settings-manager
+- Cairo-Dock
