@@ -39,12 +39,12 @@ grub-customizer:
 indicator-sound-switcher:
 	sudo apt-add-repository -y ppa:yktooo/ppa
 	sudo apt-get update
-	sudo apt-get install indicator-sound-switcher
+	sudo apt-get-y install indicator-sound-switcher
 
 Cairo-Dock:
-	sudo add-apt-repository ppa:cairo-dock-team/ppa 
+	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
 	sudo apt-get update 
-	sudo apt-get install cairo-dock cairo-dock-plug-ins 
+	sudo apt-get -y install cairo-dock cairo-dock-plug-ins 
 git_config:
 	git config --global user.name "scps950707"
 	git config --global user.email "scps950707@gmail.com"
