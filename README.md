@@ -17,6 +17,7 @@
 - grub-customizer
 - indicator-sound-switcher
 - rar
+- Cairo-Dock
 	
 ###git_config
 - name
