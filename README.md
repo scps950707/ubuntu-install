@@ -29,5 +29,8 @@
 - nvidia(only download)
 - remarkable
 
+###set_vim/reset_vim
+
+
 ###old
 - docky

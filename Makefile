@@ -1,21 +1,23 @@
 all:install git_config deb_package
 
 help:
-	@echo "\ninstall:\n-----------------------------------"
+	@echo "\n(1)install:\n-----------------------------------"
 	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/Cairo-Dock"
 	@echo "-----------------------------------\n"
-	@echo "git_config:\n-----------------------------------"
+	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
 	@echo "-----------------------------------\n"
-	@echo "deb_package:\n-----------------------------------"
+	@echo "(3)deb_package:\n-----------------------------------"
 	@echo "hrome/nvidia/remarkable/dropbox"
 	@echo "-----------------------------------\n"
-	@echo "old:\n-----------------------------------"
+	@echo "(4)set_vim/reset_vim\n"
+	@echo "(5)old:\n-----------------------------------"
 	@echo "docky"
 	@echo "-----------------------------------\n"
+
 
 
 
@@ -66,6 +68,14 @@ deb_package:
 	#chrome
 	wget https://www.dropbox.com/s/1cv0dsmge50prz7/google-chrome-stable_current_amd64.deb?dl=1 -O google-chrome-stable_current_amd64.deb
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+set_vim:
+	git clone https://github.com/scps950707/vimrc.git
+	cd vimrc/ && make install
+
+reset_vim:
+	#sudo apt-get -y purge vim
+	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
 old:
 	sudo apt-get -y install docky
