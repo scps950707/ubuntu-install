@@ -5,7 +5,6 @@
 - vim
 - exuberant-ctags
 - valgrind
-- docky
 - unity-tweak-tool
 - classicmenu-indicator
 - synaptic
@@ -29,3 +28,6 @@
 - chrome
 - nvidia(only download)
 - remarkable
+
+###old
+- docky

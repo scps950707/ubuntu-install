@@ -2,24 +2,28 @@ all:install git_config deb_package
 
 help:
 	@echo "\ninstall:\n-----------------------------------"
-	@echo "git/vim/exuberant-ctags/valgrind/dockyunity-tweak-tool"
+	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
-	@echo "grub-customizer/gconf-editor/rar"
+	@echo "grub-customizer/gconf-editor/rar/Cairo-Dock"
 	@echo "-----------------------------------\n"
 	@echo "git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
 	@echo "-----------------------------------\n"
-	@echo "deb_package:c\n-----------------------------------"
+	@echo "deb_package:\n-----------------------------------"
 	@echo "hrome/nvidia/remarkable/dropbox"
 	@echo "-----------------------------------\n"
+	@echo "old:\n-----------------------------------"
+	@echo "docky"
+	@echo "-----------------------------------\n"
+
+
 
 install:grub-customizer indicator-sound-switcher deb_package
 	sudo apt-get -y install git
 	sudo apt-get -y install vim
 	sudo apt-get -y install exuberant-ctags
 	sudo apt-get -y install valgrind
-	#sudo apt-get -y install docky
 	sudo apt-get -y install unity-tweak-tool
 	sudo apt-get -y install classicmenu-indicator
 	sudo apt-get -y install synaptic
@@ -62,3 +66,7 @@ deb_package:
 	#chrome
 	wget https://www.dropbox.com/s/1cv0dsmge50prz7/google-chrome-stable_current_amd64.deb?dl=1 -O google-chrome-stable_current_amd64.deb
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+old:
+	sudo apt-get -y install docky
+
