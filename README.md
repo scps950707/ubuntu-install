@@ -18,6 +18,7 @@
 - rar
 - docky
 - kolourpaint4
+- g++
 
 ###git_config
 - name
@@ -27,14 +28,13 @@
 ###deb_package
 - dropbox
 - chrome
-- nvidia(only download)
 - remarkable
 
 ###set_vim/reset_vim
 
 ###nvidia drivers
-- 346.59
-- 349.12
+- [346.59](http://www.geforce.com.tw/drivers/results/83712) 
+- [349.12](http://www.geforce.com.tw/drivers/results/83712) 
 
 ###old
 - compizconfig-settings-manager

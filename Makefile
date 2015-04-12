@@ -3,7 +3,7 @@ all:install git_config deb_package
 help:
 	@echo "\n(1)install:\n-----------------------------------"
 	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
-	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
+	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
 	@echo "-----------------------------------\n"
@@ -22,7 +22,7 @@ help:
 
 
 
-install:grub-customizer indicator-sound-switcher deb_package git_config
+install:grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59
 	sudo apt-get -y install git
 	sudo apt-get -y install vim
 	sudo apt-get -y install exuberant-ctags
@@ -38,7 +38,8 @@ install:grub-customizer indicator-sound-switcher deb_package git_config
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
 	sudo apt-get -y install docky
-	sudo apt-get install kolourpaint4
+	sudo apt-get -y install kolourpaint4
+	sudo apt-get -y install g++
 
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
