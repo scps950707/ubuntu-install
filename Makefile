@@ -5,7 +5,7 @@ help:
 	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
-	@echo "grub-customizer/gconf-editor/rar/docky"
+	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
 	@echo "-----------------------------------\n"
 	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -38,6 +38,7 @@ install:grub-customizer indicator-sound-switcher deb_package git_config
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
 	sudo apt-get -y install docky
+	sudo apt-get install kolourpaint4
 
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer

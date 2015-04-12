@@ -17,7 +17,8 @@
 - indicator-sound-switcher
 - rar
 - docky
-	
+- kolourpaint4
+
 ###git_config
 - name
 - email
