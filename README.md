@@ -31,6 +31,9 @@
 
 ###set_vim/reset_vim
 
+###nvidia drivers
+- 346.59
+- 349.12
 
 ###old
 - compizconfig-settings-manager

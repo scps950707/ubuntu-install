@@ -11,10 +11,11 @@ help:
 	@echo "name/email/core.editor"
 	@echo "-----------------------------------\n"
 	@echo "(3)deb_package:\n-----------------------------------"
-	@echo "hrome/nvidia/remarkable/dropbox"
+	@echo "hrome/remarkable/dropbox"
 	@echo "-----------------------------------\n"
 	@echo "(4)set_vim/reset_vim\n"
-	@echo "(5)old:\n-----------------------------------"
+	@echo "(5)NVIDIA drviers:349.12/346.59\n"
+	@echo "(6)old:\n-----------------------------------"
 	@echo "Cairo-Dock/compizconfig-settings-manager"
 	@echo "-----------------------------------\n"
 
@@ -66,8 +67,6 @@ deb_package:
 	#dropbox
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
 	sudo dpkg -i dropbox_2015.02.12_amd64.deb
-	#nvidia driver
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.12.run
 	#chrome
 	wget https://www.dropbox.com/s/1cv0dsmge50prz7/google-chrome-stable_current_amd64.deb?dl=1 -O google-chrome-stable_current_amd64.deb
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -80,5 +79,12 @@ reset_vim:
 	#sudo apt-get -y purge vim
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
+nvidia349.12:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.12.run
+
+nvidia346.59:
+	http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
+
 old:
 	sudo apt-get -y install compizconfig-settings-manager
+
