@@ -19,7 +19,7 @@
 - docky
 - kolourpaint4
 - g++
-
+- skype
 ###git_config
 - name
 - email

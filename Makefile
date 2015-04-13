@@ -6,6 +6,7 @@ help:
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
+	@echo "skype"
 	@echo "-----------------------------------\n"
 	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -22,7 +23,7 @@ help:
 
 
 
-install:grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59
+install:grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59 skype
 	sudo apt-get -y install git
 	sudo apt-get -y install vim
 	sudo apt-get -y install exuberant-ctags
@@ -51,10 +52,11 @@ indicator-sound-switcher:
 	sudo apt-get update
 	sudo apt-get-y install indicator-sound-switcher
 
-Cairo-Dock:
-	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
-	sudo apt-get update 
-	sudo apt-get -y install cairo-dock cairo-dock-plug-ins 
+skype:
+	sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
+	sudo sed -i "/^# deb-src .*partner/ s/^# //" /etc/apt/sources.listi
+	sudo apt-get update
+	sudo apt-get install skype
 
 git_config:
 	git config --global user.name "scps950707"
@@ -90,3 +92,7 @@ nvidia346.59:
 old:
 	sudo apt-get -y install compizconfig-settings-manager
 
+Cairo-Dock:
+	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
+	sudo apt-get update 
+	sudo apt-get -y install cairo-dock cairo-dock-plug-ins 
