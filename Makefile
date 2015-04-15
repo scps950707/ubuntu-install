@@ -1,8 +1,8 @@
-all:install git_config deb_package
-
+all:
+	@echo "see make help"
 help:
 	@echo "\n(1)install:\n-----------------------------------"
-	@echo "git/vim/exuberant-ctags/valgrind/unity-tweak-tool"
+	@echo "git/vim/valgrind/unity-tweak-tool"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
@@ -17,9 +17,9 @@ help:
 	@echo "(4)set_vim/reset_vim\n"
 	@echo "(5)NVIDIA drviers:349.12/346.59\n"
 	@echo "(6)old:\n-----------------------------------"
-	@echo "Cairo-Dock/compizconfig-settings-manager"
+	@echo "Cairo-Dock/compizconfig-settings-manager/exuberant-ctags"
 	@echo "-----------------------------------\n"
-
+	@echo "(7)settings\n"
 
 install:update grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59 skype
 
@@ -97,4 +97,21 @@ old:
 Cairo-Dock:
 	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
 	sudo apt-get update 
-	sudo apt-get -y install cairo-dock cairo-dock-plug-ins 
+	sudo apt-get -y install cairo-dock cairo-dock-plug-install
+
+settings:
+	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
+	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
+	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
+	gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 14'
+	gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 14'
+	gsettings set org.gnome.desktop.privacy remember-recent-files false # 紀錄檔案和應用程式使用狀況
+	gsettings set org.gnome.desktop.screensaver lock-enabled false # 鎖定
+	gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false #從暫停狀態下喚醒需要密碼
+	gsettings set com.canonical.indicator.datetime show-date true #日期與月份
+	gsettings set com.canonical.indicator.datetime show-day true #星期幾
+	gsettings set com.canonical.Unity.Lenses remote-content-search 'none' #包含線上搜尋結果
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-capture-mouse false #黏性邊界
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
+	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列

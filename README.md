@@ -3,7 +3,6 @@
 ###install
 - git
 - vim
-- exuberant-ctags
 - valgrind
 - unity-tweak-tool
 - classicmenu-indicator
@@ -38,6 +37,9 @@
 - [346.59](http://www.geforce.com.tw/drivers/results/83712) 
 - [349.12](http://www.geforce.com.tw/drivers/results/83712) 
 
+###ubuntu settings
+
 ###old
 - compizconfig-settings-manager
 - Cairo-Dock
+- exuberant-ctags
