@@ -21,12 +21,11 @@ help:
 	@echo "-----------------------------------\n"
 
 
+install:update grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59 skype
 
-
-install:grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59 skype
+update:
 	sudo apt-get -y install git
 	sudo apt-get -y install vim
-	sudo apt-get -y install exuberant-ctags
 	sudo apt-get -y install valgrind
 	sudo apt-get -y install unity-tweak-tool
 	sudo apt-get -y install classicmenu-indicator
@@ -42,6 +41,7 @@ install:grub-customizer indicator-sound-switcher deb_package git_config nvidia34
 	sudo apt-get -y install kolourpaint4
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
+
 
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
@@ -92,6 +92,7 @@ nvidia346.59:
 
 old:
 	sudo apt-get -y install compizconfig-settings-manager
+	sudo apt-get -y install exuberant-ctags
 
 Cairo-Dock:
 	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
