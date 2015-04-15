@@ -1,8 +1,8 @@
-all:
+all::
 	@echo "see make help"
 help:
 	@echo "\n(1)install:\n-----------------------------------"
-	@echo "git/vim/valgrind/unity-tweak-tool"
+	@echo "git/vim/valgrind/unity-tweak-tool/chrome/dropbox"
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
@@ -12,7 +12,7 @@ help:
 	@echo "name/email/core.editor"
 	@echo "-----------------------------------\n"
 	@echo "(3)deb_package:\n-----------------------------------"
-	@echo "hrome/remarkable/dropbox"
+	@echo "remarkable"
 	@echo "-----------------------------------\n"
 	@echo "(4)set_vim/reset_vim\n"
 	@echo "(5)NVIDIA drviers:349.12/346.59\n"
@@ -21,7 +21,9 @@ help:
 	@echo "-----------------------------------\n"
 	@echo "(7)settings\n"
 
-install:update grub-customizer indicator-sound-switcher deb_package git_config nvidia349.12 nvidia346.59 skype
+install:update repository_install deb_package git_config nvidia349.12
+
+repository_install:grub-customizer indicator-sound-switcher skype chrome dropbox
 
 update:
 	sudo apt-get -y install git
@@ -42,7 +44,6 @@ update:
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
 
-
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
@@ -59,6 +60,17 @@ skype:
 	sudo apt-get update
 	sudo apt-get install skype
 
+chrome:
+	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+	sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+	sudo apt-get update 
+	sudo apt-get -y install google-chrome-stable
+
+dropbox:
+	sudo add-apt-repository -y "deb http://linux.dropbox.com/ubuntu $(lsb_release -cs) main"
+	sudo apt-get update 
+	sudo apt-get -y install dropbox
+
 git_config:
 	git config --global user.name "scps950707"
 	git config --global user.email "scps950707@gmail.com"
@@ -69,26 +81,19 @@ deb_package:
 	#remarkable
 	wget http://remarkableapp.net/files/remarkable_1.25_all.deb
 	sudo dpkg -i remarkable_1.25_all.deb
-	#dropbox
-	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
-	sudo dpkg -i dropbox_2015.02.12_amd64.deb
-	#chrome
-	wget https://www.dropbox.com/s/1cv0dsmge50prz7/google-chrome-stable_current_amd64.deb?dl=1 -O google-chrome-stable_current_amd64.deb
-	sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 set_vim:
 	git clone https://github.com/scps950707/vimrc.git
 	cd vimrc/ && make install
 
 reset_vim:
-	#sudo apt-get -y purge vim
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
 nvidia349.12:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.12.run
 
 nvidia346.59:
-	http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
 
 old:
 	sudo apt-get -y install compizconfig-settings-manager

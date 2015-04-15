@@ -1,6 +1,6 @@
 # ubuntu-install
 
-###install
+###apt-get install
 - git
 - vim
 - valgrind
@@ -11,15 +11,20 @@
 - eclipse
 - filezilla
 - codeblocks
-- vlc
-- grub-customizer
-- indicator-sound-switcher
 - rar
+- vlc
+- gconf-editor
 - docky
 - kolourpaint4
 - g++
-- skype
 - dconf-editor
+
+###repository_install
+- grub-customizer
+- indicator-sound-switcher
+- dropbox
+- chrome
+- skype
 
 ###git_config
 - name
@@ -27,8 +32,6 @@
 - core.editor
 
 ###deb_package
-- dropbox
-- chrome
 - remarkable
 
 ###set_vim/reset_vim
