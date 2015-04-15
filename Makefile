@@ -6,7 +6,7 @@ help:
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
-	@echo "skype"
+	@echo "skype/dconf-editor"
 	@echo "-----------------------------------\n"
 	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -41,6 +41,7 @@ install:grub-customizer indicator-sound-switcher deb_package git_config nvidia34
 	sudo apt-get -y install docky
 	sudo apt-get -y install kolourpaint4
 	sudo apt-get -y install g++
+	sudo apt-get -y install dconf-editor
 
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer

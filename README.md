@@ -20,6 +20,7 @@
 - kolourpaint4
 - g++
 - skype
+- dconf-editor
 
 ###git_config
 - name
