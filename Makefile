@@ -105,6 +105,8 @@ Cairo-Dock:
 	sudo apt-get -y install cairo-dock cairo-dock-plug-install
 
 settings:
+	alias memcheck='valgrind --leak-check=yes'
+	alias memcheckfull='valgrind --leak-check=full'
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
 	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
