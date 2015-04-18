@@ -58,7 +58,7 @@ skype:
 	sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 	sudo sed -i "/^# deb-src .*partner/ s/^# //" /etc/apt/sources.listi
 	sudo apt-get update
-	sudo apt-get install skype
+	sudo apt-get -y install skype
 
 chrome:
 	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
