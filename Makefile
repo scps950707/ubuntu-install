@@ -79,7 +79,7 @@ git_config:
 
 deb_package:
 	#remarkable
-	wget http://remarkableapp.net/files/remarkable_1.25_all.deb
+	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
 	sudo dpkg -i remarkable_1.25_all.deb
 
 set_vim:
