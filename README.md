@@ -24,7 +24,6 @@
 - indicator-sound-switcher
 - dropbox
 - chrome
-- skype
 
 ###git_config
 - name
@@ -46,3 +45,4 @@
 - compizconfig-settings-manager
 - Cairo-Dock
 - exuberant-ctags
+- skype

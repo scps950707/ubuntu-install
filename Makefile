@@ -6,7 +6,7 @@ help:
 	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
 	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
 	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
-	@echo "skype/dconf-editor"
+	@echo "dconf-editor"
 	@echo "-----------------------------------\n"
 	@echo "(2)git_config:\n-----------------------------------"
 	@echo "name/email/core.editor"
@@ -23,7 +23,7 @@ help:
 
 install:update repository_install deb_package git_config nvidia349.12
 
-repository_install:grub-customizer indicator-sound-switcher skype chrome dropbox
+repository_install:grub-customizer indicator-sound-switcher chrome dropbox
 
 update:
 	sudo apt-get -y install git
@@ -53,13 +53,6 @@ indicator-sound-switcher:
 	sudo apt-add-repository -y ppa:yktooo/ppa
 	sudo apt-get update
 	sudo apt-get-y install indicator-sound-switcher
-
-skype:
-	# sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
-	# sudo sed -i "/^# deb-src .*partner/ s/^# //" /etc/apt/sources.list
-	add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-	sudo apt-get update
-	sudo apt-get -y install skype
 
 chrome:
 	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
