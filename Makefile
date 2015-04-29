@@ -55,8 +55,9 @@ indicator-sound-switcher:
 	sudo apt-get-y install indicator-sound-switcher
 
 skype:
-	sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
-	sudo sed -i "/^# deb-src .*partner/ s/^# //" /etc/apt/sources.listi
+	# sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
+	# sudo sed -i "/^# deb-src .*partner/ s/^# //" /etc/apt/sources.list
+	add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 	sudo apt-get update
 	sudo apt-get -y install skype
 
