@@ -1,29 +1,11 @@
-all::
+all:
 	@echo "see make help"
 help:
-	@echo "\n(1)install:\n-----------------------------------"
-	@echo "git/vim/valgrind/unity-tweak-tool/chrome/dropbox"
-	@echo "classicmenu-indicator/synaptic/shutter/eclipse/g++"
-	@echo "filezilla/codeblocks/vlc/indicator-sound-switcher"
-	@echo "grub-customizer/gconf-editor/rar/docky/kolourpaint4"
-	@echo "dconf-editor"
-	@echo "-----------------------------------\n"
-	@echo "(2)git_config:\n-----------------------------------"
-	@echo "name/email/core.editor"
-	@echo "-----------------------------------\n"
-	@echo "(3)deb_package:\n-----------------------------------"
-	@echo "remarkable"
-	@echo "-----------------------------------\n"
-	@echo "(4)set_vim/reset_vim\n"
-	@echo "(5)NVIDIA drviers:349.12/346.59\n"
-	@echo "(6)old:\n-----------------------------------"
-	@echo "Cairo-Dock/compizconfig-settings-manager/exuberant-ctags"
-	@echo "-----------------------------------\n"
-	@echo "(7)settings\n"
+	@echo "make install"
 
-install:update repository_install deb_package git_config nvidia349.12
+install:update repository_install deb_package git_config nvidia349.16
 
-repository_install:grub-customizer indicator-sound-switcher chrome dropbox
+not apt-get:grub-customizer indicator-sound-switcher chrome dropbox autojump
 
 update:
 	sudo apt-get -y install git
@@ -43,7 +25,8 @@ update:
 	sudo apt-get -y install kolourpaint4
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
-
+	sudo apt-get -y install byobu
+	sudo apt-get -y install nautilus-open-terminal
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
@@ -55,15 +38,13 @@ indicator-sound-switcher:
 	sudo apt-get-y install indicator-sound-switcher
 
 chrome:
-	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-	sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-	sudo apt-get update 
-	sudo apt-get -y install google-chrome-stable
+	sudo apt-get install libxss1 libappindicator1 libindicator7
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo dpkg -i google-chrome*.deb
 
 dropbox:
-	sudo add-apt-repository -y "deb http://linux.dropbox.com/ubuntu $(lsb_release -cs) main"
-	sudo apt-get update 
-	sudo apt-get -y install dropbox
+	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+	~/.dropbox-dist/dropboxd
 
 git_config:
 	git config --global user.name "scps950707"
@@ -83,8 +64,8 @@ set_vim:
 reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
-nvidia349.12:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.12.run
+nvidia349.16:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.16.run
 
 nvidia346.59:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
@@ -93,14 +74,9 @@ old:
 	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install exuberant-ctags
 
-Cairo-Dock:
-	sudo add-apt-repository -y ppa:cairo-dock-team/ppa 
-	sudo apt-get update 
-	sudo apt-get -y install cairo-dock cairo-dock-plug-install
-
 settings:
-	alias memcheck='valgrind --leak-check=yes'
-	alias memcheckfull='valgrind --leak-check=full'
+	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
+	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
 	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
@@ -116,3 +92,8 @@ settings:
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
 	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
+autojump:
+	git clone git://github.com/joelthelion/autojump.git
+	cd autojump && ./install.py
+	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
+	rm -rf autojump/

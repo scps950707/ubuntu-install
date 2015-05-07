@@ -1,28 +1,29 @@
 # ubuntu-install
 
 ###apt-get install
-- git
-- vim
-- valgrind
-- unity-tweak-tool
-- classicmenu-indicator
-- synaptic
-- shutter
-- eclipse
-- filezilla
-- codeblocks
+- [git](http://git-scm.com/)
+- [vim](http://www.vim.org/)
+- [valgrind](http://valgrind.org/)
+- [unity-tweak-tool](https://launchpad.net/unity-tweak-tool)
+- [classicmenu-indicator](http://www.florian-diesch.de/software/classicmenu-indicator/)
+- [synaptic](http://www.nongnu.org/synaptic/)
+- [shutter](http://shutter-project.org/)
+- [eclipse](http://eclipse.org/)
+- [filezilla](https://filezilla-project.org/)
+- [codeblocks](http://www.codeblocks.org/)
 - rar
-- vlc
-- gconf-editor
-- docky
-- kolourpaint4
+- [vlc](http://www.videolan.org/vlc/)
+- [gconf-editor](https://projects.gnome.org/gconf/)
+- [docky](http://wiki.go-docky.com/index.php?title=Welcome_to_the_Docky_wiki)
+- [kolourpaint4](http://kolourpaint.org/)
 - g++
-- dconf-editor
-
-###repository_install
-- grub-customizer
-- indicator-sound-switcher
-- dropbox
+- [dconf-editor](https://wiki.gnome.org/Projects/dconf)
+- [byobu](http://byobu.co/)
+- [nautilus-open-terminal](https://github.com/GNOME/nautilus)
+###not apt-get
+- [grub-customizer](https://launchpad.net/grub-customizer)
+- [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
+- [dropbox](https://www.dropbox.com/install?os=lnx)
 - chrome
 
 ###git_config
@@ -37,12 +38,11 @@
 
 ###nvidia drivers
 - [346.59](http://www.geforce.com.tw/drivers/results/83712) 
-- [349.12](http://www.geforce.com.tw/drivers/results/83712) 
+- [349.16](http://www.geforce.com.tw/drivers/results/83712) 
 
 ###ubuntu settings
 
 ###old
 - compizconfig-settings-manager
-- Cairo-Dock
 - exuberant-ctags
 - skype
