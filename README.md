@@ -25,14 +25,13 @@
 - [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [dropbox](https://www.dropbox.com/install?os=lnx)
 - chrome
+- [remarkable](http://remarkableapp.net/)
+- [autojump](https://github.com/joelthelion/autojump)
 
 ###git_config
 - name
 - email
 - core.editor
-
-###deb_package
-- remarkable
 
 ###set_vim/reset_vim
 
@@ -40,6 +39,11 @@
 - [346.59](http://www.geforce.com.tw/drivers/results/83712) 
 - [349.16](http://www.geforce.com.tw/drivers/results/83712) 
 
+###alias
+	memcheck='valgrind --leak-check=yes'
+	memcheckfull='valgrind --leak-check=full'
+	in='sudo apt-get install'
+	re='sudo apt-get remove'
 ###ubuntu settings
 
 ###old

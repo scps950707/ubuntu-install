@@ -3,9 +3,9 @@ all:
 help:
 	@echo "make install"
 
-install:update repository_install deb_package git_config nvidia349.16
+install:update not-apt-get git_config nvidia349.16
 
-not apt-get:grub-customizer indicator-sound-switcher chrome dropbox autojump
+not-apt-get:grub-customizer indicator-sound-switcher chrome dropbox remarkable autojump
 
 update:
 	sudo apt-get -y install git
@@ -46,16 +46,23 @@ dropbox:
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 	~/.dropbox-dist/dropboxd
 
+
+remarkable:
+	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
+	sudo dpkg -i remarkable_1.41_all.deb
+	rm remarkable_1.41_all.deb
+
+autojump:
+	git clone git://github.com/joelthelion/autojump.git
+	cd autojump && ./install.py
+	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
+	rm -rf autojump/
+
 git_config:
 	git config --global user.name "scps950707"
 	git config --global user.email "scps950707@gmail.com"
 	git config --global core.editor "vim"
 	git config --global push.default "simple"
-
-deb_package:
-	#remarkable
-	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
-	sudo dpkg -i remarkable_1.25_all.deb
 
 set_vim:
 	git clone https://github.com/scps950707/vimrc.git
@@ -70,13 +77,13 @@ nvidia349.16:
 nvidia346.59:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
 
-old:
-	sudo apt-get -y install compizconfig-settings-manager
-	sudo apt-get -y install exuberant-ctags
-
-settings:
+alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
+	echo "alias in='sudo apt-get install'" >> ~/.bashrc
+	echo "alias re='sudo apt-get remove'" >> ~/.bashrc
+
+settings:
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
 	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
@@ -92,8 +99,7 @@ settings:
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
 	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
-autojump:
-	git clone git://github.com/joelthelion/autojump.git
-	cd autojump && ./install.py
-	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
-	rm -rf autojump/
+	
+old:
+	sudo apt-get -y install compizconfig-settings-manager
+	sudo apt-get -y install exuberant-ctags
