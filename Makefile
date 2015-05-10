@@ -27,6 +27,7 @@ update:
 	sudo apt-get -y install dconf-editor
 	sudo apt-get -y install byobu
 	sudo apt-get -y install nautilus-open-terminal
+	sudo apt-get -y install enca
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
