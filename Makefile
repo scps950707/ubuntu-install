@@ -5,7 +5,7 @@ help:
 
 install:update not-apt-get git_config nvidia349.16
 
-not-apt-get:grub-customizer indicator-sound-switcher chrome dropbox remarkable autojump
+not-apt-get:grub-customizer indicator-sound-switcher chrome dropbox remarkable autojump ubuntu-tweak
 
 update:
 	sudo apt-get -y install git
@@ -58,6 +58,11 @@ autojump:
 	cd autojump && ./install.py
 	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
 	rm -rf autojump/
+
+ubuntu-tweak:
+	wget https://launchpad.net/ubuntu-tweak/0.8.x/0.8.7/+download/ubuntu-tweak_0.8.7-1~trusty2_all.deb
+	sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb
+	rm ubuntu-tweak_0.8.7-1~trusty2_all.deb
 
 git_config:
 	git config --global user.name "scps950707"

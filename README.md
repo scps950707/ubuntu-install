@@ -29,6 +29,7 @@
 - chrome
 - [remarkable](http://remarkableapp.net/)
 - [autojump](https://github.com/joelthelion/autojump)
+- [ubuntu-tweak](http://ubuntu-tweak.com/)
 
 ###git_config
 - name
