@@ -45,8 +45,7 @@
 ###alias
 	memcheck='valgrind --leak-check=yes'
 	memcheckfull='valgrind --leak-check=full'
-	in='sudo apt-get install'
-	re='sudo apt-get remove'
+
 ###ubuntu settings
 
 ###old

@@ -69,6 +69,9 @@ git_config:
 	git config --global user.email "scps950707@gmail.com"
 	git config --global core.editor "vim"
 	git config --global push.default "simple"
+	git config --global alias.co commit
+	git config --global alias.pu push
+	git config --global alias.st status
 
 set_vim:
 	git clone https://github.com/scps950707/vimrc.git
@@ -86,8 +89,6 @@ nvidia346.59:
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
-	echo "alias in='sudo apt-get install'" >> ~/.bashrc
-	echo "alias re='sudo apt-get remove'" >> ~/.bashrc
 
 settings:
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
