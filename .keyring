@@ -1,0 +1,4 @@
+#!/usr/bin/python
+ 
+import gnomekeyring
+gnomekeyring.unlock_sync(None, 'yiyang3210591');
