@@ -91,6 +91,9 @@ alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
 
+docky_chrome_settings:
+	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop && rm ~/.cache/docky/docky.desktop.*.cache
+
 settings:
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
