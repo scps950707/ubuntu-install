@@ -25,9 +25,9 @@ update:
 	sudo apt-get -y install kolourpaint4
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
-	sudo apt-get -y install byobu
 	sudo apt-get -y install nautilus-open-terminal
 	sudo apt-get -y install enca
+	sudo apt-get -y install terminator
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
@@ -41,7 +41,8 @@ indicator-sound-switcher:
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-	sudo dpkg -i google-chrome*.deb
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+	cp google-chrome-stable_current_amd64.deb ~/linux_install/
 	rm google-chrome-stable_current_amd64.deb
 
 dropbox:
@@ -52,6 +53,7 @@ dropbox:
 remarkable:
 	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
 	sudo dpkg -i remarkable_1.41_all.deb
+	cp remarkable_1.41_all.deb ~/linux_install/
 	rm remarkable_1.41_all.deb
 
 autojump:
@@ -63,6 +65,7 @@ autojump:
 ubuntu-tweak:
 	wget https://launchpad.net/ubuntu-tweak/0.8.x/0.8.7/+download/ubuntu-tweak_0.8.7-1~trusty2_all.deb
 	sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb
+	cp ubuntu-tweak_0.8.7-1~trusty2_all.deb ~/linux_install/
 	rm ubuntu-tweak_0.8.7-1~trusty2_all.deb
 
 git_config:
@@ -82,10 +85,13 @@ reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
 nvidia349.16:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.12/NVIDIA-Linux-x86_64-349.16.run
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.16/NVIDIA-Linux-x86_64-349.16.run -P ~/linux_install/
 
 nvidia346.59:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run -P ~/linux_install/
+
+nvidia346.72:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.72/NVIDIA-Linux-x86_64-346.72.run -P ~/linux_install/
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
@@ -111,3 +117,4 @@ settings:
 old:
 	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install exuberant-ctags
+	sudo apt-get -y install byobu

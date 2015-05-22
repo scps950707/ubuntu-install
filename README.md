@@ -18,9 +18,10 @@
 - [kolourpaint4](http://kolourpaint.org/)
 - g++
 - [dconf-editor](https://wiki.gnome.org/Projects/dconf)
-- [byobu](http://byobu.co/)
 - [nautilus-open-terminal](https://github.com/GNOME/nautilus)
 - [enca](https://github.com/nijel/enca)
+- [terminator](https://launchpad.net/terminator)
+
 
 ###not apt-get
 - [grub-customizer](https://launchpad.net/grub-customizer)
@@ -31,24 +32,31 @@
 - [autojump](https://github.com/joelthelion/autojump)
 - [ubuntu-tweak](http://ubuntu-tweak.com/)
 
+
 ###git_config
 - name
 - email
 - core.editor
 
+
 ###set_vim/reset_vim
+
 
 ###nvidia drivers
 - [346.59](http://www.geforce.com.tw/drivers/results/83712) 
-- [349.16](http://www.geforce.com.tw/drivers/results/83712) 
+- [349.16](http://www.geforce.com.tw/drivers/results/84143) 
+- [346.72](http://www.geforce.com.tw/drivers/results/84816)
 
 ###alias
 	memcheck='valgrind --leak-check=yes'
 	memcheckfull='valgrind --leak-check=full'
 
+
 ###ubuntu settings
+
 
 ###old
 - compizconfig-settings-manager
 - exuberant-ctags
 - skype
+- [byobu](http://byobu.co/)
