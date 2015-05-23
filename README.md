@@ -51,6 +51,9 @@
 	memcheck='valgrind --leak-check=yes'
 	memcheckfull='valgrind --leak-check=full'
 
+  
+###docky_chrome_settings
+
 
 ###ubuntu settings
 
