@@ -9,7 +9,7 @@ not-apt-get:grub-customizer indicator-sound-switcher chrome dropbox remarkable a
 
 update:
 	sudo apt-get -y install git
-	sudo apt-get -y install vim
+	sudo apt-get -y install vim-gtk
 	sudo apt-get -y install valgrind
 	sudo apt-get -y install unity-tweak-tool
 	sudo apt-get -y install classicmenu-indicator
@@ -28,6 +28,7 @@ update:
 	sudo apt-get -y install nautilus-open-terminal
 	sudo apt-get -y install enca
 	sudo apt-get -y install terminator
+	sudo apt-get -y install p7zip-full
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update

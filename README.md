@@ -2,7 +2,7 @@
 
 ###apt-get install
 - [git](http://git-scm.com/)
-- [vim](http://www.vim.org/)
+- [vim-gtk](http://www.vim.org/)
 - [valgrind](http://valgrind.org/)
 - [unity-tweak-tool](https://launchpad.net/unity-tweak-tool)
 - [classicmenu-indicator](http://www.florian-diesch.de/software/classicmenu-indicator/)
@@ -21,6 +21,7 @@
 - [nautilus-open-terminal](https://github.com/GNOME/nautilus)
 - [enca](https://github.com/nijel/enca)
 - [terminator](https://launchpad.net/terminator)
+- [p7zip](http://www.7-zip.org/)
 
 
 ###not apt-get
