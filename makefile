@@ -45,6 +45,7 @@ chrome:
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
 	cp google-chrome-stable_current_amd64.deb ~/linux_install/
 	rm google-chrome-stable_current_amd64.deb
+	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop
 
 dropbox:
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
