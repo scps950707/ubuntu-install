@@ -22,6 +22,7 @@
 - [enca](https://github.com/nijel/enca)
 - [terminator](https://launchpad.net/terminator)
 - [p7zip](http://www.7-zip.org/)
+- [livestreamer](http://docs.livestreamer.io)
 
 
 ###not apt-get

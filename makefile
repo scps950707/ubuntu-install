@@ -29,6 +29,9 @@ update:
 	sudo apt-get -y install enca
 	sudo apt-get -y install terminator
 	sudo apt-get -y install p7zip-full
+	sudo apt-get -y install python-pip
+	sudo pip install livestreamer
+
 grub-customizer:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
