@@ -45,9 +45,7 @@
 
 
 ###nvidia drivers
-- [346.59](http://www.geforce.com.tw/drivers/results/83712) 
-- [349.16](http://www.geforce.com.tw/drivers/results/84143) 
-- [346.72](http://www.geforce.com.tw/drivers/results/84816)
+- [352.21](http://www.geforce.com.tw/drivers/results/86416) 
 
 ###alias
 	memcheck='valgrind --leak-check=yes'
