@@ -3,9 +3,9 @@ all:
 help:
 	@echo "make install"
 
-install:update not-apt-get git_config nvidia349.16
+install:update not-apt-get git_config
 
-not-apt-get:grub-customizer indicator-sound-switcher chrome dropbox remarkable autojump ubuntu-tweak
+not-apt-get: indicator-sound-switcher chrome remarkable autojump ubuntu-tweak
 
 update:
 	sudo apt-get -y install git
@@ -40,7 +40,7 @@ grub-customizer:
 indicator-sound-switcher:
 	sudo apt-add-repository -y ppa:yktooo/ppa
 	sudo apt-get update
-	sudo apt-get-y install indicator-sound-switcher
+	sudo apt-get -y install indicator-sound-switcher
 
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
@@ -57,7 +57,6 @@ dropbox:
 
 remarkable:
 	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
-	sudo dpkg -i remarkable_1.41_all.deb
 	cp remarkable_1.41_all.deb ~/linux_install/
 	rm remarkable_1.41_all.deb
 
@@ -69,7 +68,6 @@ autojump:
 
 ubuntu-tweak:
 	wget https://launchpad.net/ubuntu-tweak/0.8.x/0.8.7/+download/ubuntu-tweak_0.8.7-1~trusty2_all.deb
-	sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb
 	cp ubuntu-tweak_0.8.7-1~trusty2_all.deb ~/linux_install/
 	rm ubuntu-tweak_0.8.7-1~trusty2_all.deb
 
@@ -89,14 +87,8 @@ set_vim:
 reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
-nvidia349.16:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/349.16/NVIDIA-Linux-x86_64-349.16.run -P ~/linux_install/
-
-nvidia346.59:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.59/NVIDIA-Linux-x86_64-346.59.run -P ~/linux_install/
-
-nvidia346.72:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/346.72/NVIDIA-Linux-x86_64-346.72.run -P ~/linux_install/
+nvidia352.21:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.21/NVIDIA-Linux-x86_64-352.21.run
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
