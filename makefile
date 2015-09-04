@@ -87,8 +87,8 @@ set_vim:
 reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
-nvidia352.21:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.21/NVIDIA-Linux-x86_64-352.21.run
+nvidia355.11:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/355.11/NVIDIA-Linux-x86_64-355.11.run
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
