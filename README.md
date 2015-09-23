@@ -16,12 +16,13 @@
 - [gconf-editor](https://projects.gnome.org/gconf/)
 - [docky](http://wiki.go-docky.com/index.php?title=Welcome_to_the_Docky_wiki)
 - [kolourpaint4](http://kolourpaint.org/)
-- g++
+- [g++](https://gcc.gnu.org/)
 - [dconf-editor](https://wiki.gnome.org/Projects/dconf)
 - [nautilus-open-terminal](https://github.com/GNOME/nautilus)
 - [enca](https://github.com/nijel/enca)
 - [terminator](https://launchpad.net/terminator)
 - [p7zip](http://www.7-zip.org/)
+- [exuberant-ctags](http://ctags.sourceforge.net/)
 - [livestreamer](http://docs.livestreamer.io)
 
 
@@ -29,7 +30,7 @@
 - [grub-customizer](https://launchpad.net/grub-customizer)
 - [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [dropbox](https://www.dropbox.com/install?os=lnx)
-- chrome
+- [chrome](https://www.google.com.tw/chrome/browser/desktop/)
 - [remarkable](http://remarkableapp.net/)
 - [autojump](https://github.com/joelthelion/autojump)
 - [ubuntu-tweak](http://ubuntu-tweak.com/)
@@ -45,7 +46,7 @@
 
 
 ###nvidia drivers
-- [352.21](http://www.geforce.com.tw/drivers/results/86416) 
+- [355.11](http://www.geforce.com.tw/drivers/results/90524) 
 
 ###alias
 	memcheck='valgrind --leak-check=yes'
@@ -60,6 +61,5 @@
 
 ###old
 - compizconfig-settings-manager
-- exuberant-ctags
 - skype
 - [byobu](http://byobu.co/)

@@ -30,6 +30,7 @@ update:
 	sudo apt-get -y install terminator
 	sudo apt-get -y install p7zip-full
 	sudo apt-get -y install python-pip
+	sudo apt-get -y install exuberant-ctags
 	sudo pip install livestreamer
 
 grub-customizer:
@@ -87,8 +88,8 @@ set_vim:
 reset_vim:
 	rm -rf ~/.vim ~/.vimrc ~/.viminfo
 
-nvidia352.21:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.21/NVIDIA-Linux-x86_64-352.21.run
+nvidia_driver:
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/355.11/NVIDIA-Linux-x86_64-355.11.run
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
@@ -96,6 +97,9 @@ alias:
 
 docky_chrome_settings:
 	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop && rm ~/.cache/docky/docky.desktop.*.cache
+
+homefoldername_to_eng:
+	LANG=C xdg-user-dirs-gtk-update
 
 settings:
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
@@ -113,8 +117,8 @@ settings:
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
 	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
+	sudo sed -i 's/UTC=yes/UTC=no/g' /etc/default/rcS
 	
 old:
 	sudo apt-get -y install compizconfig-settings-manager
-	sudo apt-get -y install exuberant-ctags
 	sudo apt-get -y install byobu
