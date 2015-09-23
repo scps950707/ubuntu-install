@@ -21,7 +21,6 @@ update:
 	sudo apt-get -y install rar
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
-	sudo apt-get -y install docky
 	sudo apt-get -y install kolourpaint4
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
@@ -55,6 +54,10 @@ dropbox:
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 	~/.dropbox-dist/dropboxd
 
+docky:
+	sudo add-apt-repository ppa:docky-core/stable
+	sudo apt-get update
+	sudo apt-get install docky
 
 remarkable:
 	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
@@ -122,3 +125,4 @@ settings:
 old:
 	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install byobu
+	sudo apt-get -y install docky
