@@ -97,6 +97,8 @@ nvidia_driver:
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
+	echo "alias mcda='make clean dep all'" >> ~/.bashrc
+	echo "alias mc='make clean'" >> ~/.bashrc
 
 docky_chrome_settings:
 	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop && rm ~/.cache/docky/docky.desktop.*.cache
