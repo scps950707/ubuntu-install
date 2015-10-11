@@ -5,7 +5,7 @@ help:
 
 install:update not-apt-get git_config
 
-not-apt-get: indicator-sound-switcher chrome remarkable autojump ubuntu-tweak
+not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak
 
 update:
 	sudo apt-get -y install git
@@ -30,6 +30,7 @@ update:
 	sudo apt-get -y install p7zip-full
 	sudo apt-get -y install python-pip
 	sudo apt-get -y install exuberant-ctags
+	sudo apt-get -y install retext
 	sudo pip install livestreamer
 
 grub-customizer:
@@ -97,6 +98,8 @@ nvidia_driver:
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
+	echo "alias mcda ='make clean dep all'" >> ~/.bashrc
+	echo "alias mc ='make clean'" >> ~/.bashrc
 
 docky_chrome_settings:
 	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop && rm ~/.cache/docky/docky.desktop.*.cache

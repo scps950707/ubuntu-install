@@ -23,6 +23,7 @@
 - [terminator](https://launchpad.net/terminator)
 - [p7zip](http://www.7-zip.org/)
 - [exuberant-ctags](http://ctags.sourceforge.net/)
+- [retext](https://github.com/retext-project/retext)
 - [livestreamer](http://docs.livestreamer.io)
 
 
@@ -51,6 +52,8 @@
 ###alias
 	memcheck='valgrind --leak-check=yes'
 	memcheckfull='valgrind --leak-check=full'
+	mcda='make clean dep all'
+	mc='make clean'
 
   
 ###docky_chrome_settings
