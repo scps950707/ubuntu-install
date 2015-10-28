@@ -32,7 +32,7 @@
 - [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [dropbox](https://www.dropbox.com/install?os=lnx)
 - [chrome](https://www.google.com.tw/chrome/browser/desktop/)
-- [remarkable](http://remarkableapp.net/)
+- [remarkable](https://remarkableapp.github.io/)
 - [autojump](https://github.com/joelthelion/autojump)
 - [ubuntu-tweak](http://ubuntu-tweak.com/)
 
