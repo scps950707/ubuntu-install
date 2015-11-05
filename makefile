@@ -1,11 +1,11 @@
-all:
-	@echo "see make help"
+all:install
+
 help:
 	@echo "make install"
 
 install:update not-apt-get git_config
 
-not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak
+not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable
 
 update:
 	sudo apt-get -y install git
@@ -49,21 +49,19 @@ chrome:
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
 	cp google-chrome-stable_current_amd64.deb ~/linux_install/
 	rm google-chrome-stable_current_amd64.deb
-	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop
 
 dropbox:
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 	~/.dropbox-dist/dropboxd
 
 docky:
-	sudo add-apt-repository ppa:docky-core/stable
+	sudo add-apt-repository -y ppa:docky-core/stable
 	sudo apt-get update
-	sudo apt-get install docky
+	sudo apt-get -y install docky
 
 remarkable:
-	wget http://remarkableapp.net/files/remarkable_1.41_all.deb
-	cp remarkable_1.41_all.deb ~/linux_install/
-	rm remarkable_1.41_all.deb
+	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb
+	mv remarkable_1.62_all.deb ~/linux_install/
 
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
@@ -72,9 +70,9 @@ autojump:
 	rm -rf autojump/
 
 ubuntu-tweak:
-	wget https://launchpad.net/ubuntu-tweak/0.8.x/0.8.7/+download/ubuntu-tweak_0.8.7-1~trusty2_all.deb
-	cp ubuntu-tweak_0.8.7-1~trusty2_all.deb ~/linux_install/
-	rm ubuntu-tweak_0.8.7-1~trusty2_all.deb
+	sudo add-apt-repository -y ppa:tualatrix/ppa
+	sudo apt-get update
+	sudo apt-get install -y ubuntu-tweak
 
 git_config:
 	git config --global user.name "scps950707"
@@ -85,24 +83,15 @@ git_config:
 	git config --global alias.pu push
 	git config --global alias.st status
 
-set_vim:
-	git clone https://github.com/scps950707/vimrc.git
-	cd vimrc/ && make install
-
-reset_vim:
-	rm -rf ~/.vim ~/.vimrc ~/.viminfo
-
 nvidia_driver:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/355.11/NVIDIA-Linux-x86_64-355.11.run
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.55/NVIDIA-Linux-x86_64-352.55.run
+	mv NVIDIA-Linux-x86_64-352.55.run ~/linux_install/
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
 	echo "alias mcda ='make clean dep all'" >> ~/.bashrc
 	echo "alias mc ='make clean'" >> ~/.bashrc
-
-docky_chrome_settings:
-	sudo sed -i '/Group\]\|Desktop Entry/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop && rm ~/.cache/docky/docky.desktop.*.cache
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update

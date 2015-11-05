@@ -1,6 +1,6 @@
 # ubuntu-install
 
-###apt-get install
+##apt-get install
 - [git](http://git-scm.com/)
 - [vim-gtk](http://www.vim.org/)
 - [valgrind](http://valgrind.org/)
@@ -27,42 +27,35 @@
 - [livestreamer](http://docs.livestreamer.io)
 
 
-###not apt-get
+##not apt-get
 - [grub-customizer](https://launchpad.net/grub-customizer)
 - [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [dropbox](https://www.dropbox.com/install?os=lnx)
 - [chrome](https://www.google.com.tw/chrome/browser/desktop/)
-- [remarkable](https://remarkableapp.github.io/)
+- [remarkable(1.62)](https://remarkableapp.github.io/)
 - [autojump](https://github.com/joelthelion/autojump)
-- [ubuntu-tweak](http://ubuntu-tweak.com/)
+- [ubuntu-tweak(0.8.8)](https://launchpad.net/ubuntu-tweak)
 
 
-###git_config
+##git_config
 - name
 - email
 - core.editor
 
 
-###set_vim/reset_vim
+##nvidia drivers
+- [352.55](http://www.geforce.com.tw/drivers/results/92846) 
+- [DOC](ftp://download.nvidia.com/XFree86/Linux-x86_64/352.55/README/index.html)
 
 
-###nvidia drivers
-- [355.11](http://www.geforce.com.tw/drivers/results/90524) 
-
-###alias
+##alias
 	memcheck='valgrind --leak-check=yes'
 	memcheckfull='valgrind --leak-check=full'
 	mcda='make clean dep all'
 	mc='make clean'
 
-  
-###docky_chrome_settings
 
-
-###ubuntu settings
-
-
-###old
+##old
 - compizconfig-settings-manager
 - skype
 - [byobu](http://byobu.co/)
