@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=NVIDIA X Server Settings
+Type=Application
+Exec=nvidia-settings --load-config-only
+Terminal=false
+NoDisplay=true
+Categories=Utility;

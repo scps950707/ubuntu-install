@@ -87,6 +87,9 @@ nvidia_driver:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.55/NVIDIA-Linux-x86_64-352.55.run
 	mv NVIDIA-Linux-x86_64-352.55.run ~/linux_install/
 
+nvidia_autostart:
+	cat nvidia-settings.desktop > ~/.config/autostart/nvidia-settings.desktop
+
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
