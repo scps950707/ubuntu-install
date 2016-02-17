@@ -11,7 +11,7 @@
 - [eclipse](http://eclipse.org/)
 - [filezilla](https://filezilla-project.org/)
 - [codeblocks](http://www.codeblocks.org/)
-- rar
+- [rar](http://www.rarlabs.com/)
 - [vlc](http://www.videolan.org/vlc/)
 - [gconf-editor](https://projects.gnome.org/gconf/)
 - [docky](http://wiki.go-docky.com/index.php?title=Welcome_to_the_Docky_wiki)
@@ -29,7 +29,7 @@
 
 ##not apt-get
 - [grub-customizer](https://launchpad.net/grub-customizer)
-- [indicator-sound-switcher](https://github.com/yktoo/indicator-sound-switcher)
+- [indicator-sound-switcher](http://yktoo.com/en/software/indicator-sound-switcher)
 - [dropbox](https://www.dropbox.com/install?os=lnx)
 - [chrome](https://www.google.com.tw/chrome/browser/desktop/)
 - [remarkable(1.62)](https://remarkableapp.github.io/)
@@ -44,8 +44,8 @@
 
 
 ##nvidia drivers
-- [352.55](http://www.geforce.com.tw/drivers/results/92846) 
-- [DOC](ftp://download.nvidia.com/XFree86/Linux-x86_64/352.55/README/index.html)
+- [361.28](http://www.geforce.com.tw/drivers/results/98416) 
+- [DOC](ftp://download.nvidia.com/XFree86/Linux-x86_64/361.28/README/index.html)
 
 
 ##alias

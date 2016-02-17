@@ -84,7 +84,7 @@ git_config:
 	git config --global alias.st status
 
 nvidia_driver:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.55/NVIDIA-Linux-x86_64-352.55.run
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run
 	mv NVIDIA-Linux-x86_64-352.55.run ~/linux_install/
 
 nvidia_autostart:
