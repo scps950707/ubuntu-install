@@ -25,6 +25,8 @@
 - [exuberant-ctags](http://ctags.sourceforge.net/)
 - [retext](https://github.com/retext-project/retext)
 - [livestreamer](http://docs.livestreamer.io)
+- [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
+- [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
 
 
 ##not apt-get
@@ -44,7 +46,7 @@
 
 
 ##nvidia drivers
-- [361.28](http://www.geforce.com.tw/drivers/results/98416) 
+- [361.28](http://www.geforce.com.tw/drivers/results/98416)
 - [DOC](ftp://download.nvidia.com/XFree86/Linux-x86_64/361.28/README/index.html)
 
 
@@ -56,6 +58,5 @@
 
 
 ##old
-- compizconfig-settings-manager
 - skype
 - [byobu](http://byobu.co/)

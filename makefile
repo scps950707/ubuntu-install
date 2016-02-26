@@ -3,9 +3,12 @@ all:install
 help:
 	@echo "make install"
 
-install:update not-apt-get git_config
+install:folder update not-apt-get git_config
 
 not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable
+
+folder:
+	mkdir ~/linux_install -p
 
 update:
 	sudo apt-get -y install git
@@ -31,6 +34,8 @@ update:
 	sudo apt-get -y install python-pip
 	sudo apt-get -y install exuberant-ctags
 	sudo apt-get -y install retext
+	sudo apt-get -y install compizconfig-settings-manager
+	sudo apt-get -y install compiz-plugins
 	sudo pip install livestreamer
 
 grub-customizer:
@@ -116,8 +121,7 @@ settings:
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
 	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
 	sudo sed -i 's/UTC=yes/UTC=no/g' /etc/default/rcS
-	
+
 old:
-	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install byobu
 	sudo apt-get -y install docky
