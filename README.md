@@ -80,7 +80,7 @@
 
 ##gcin install
 - 	`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3`
-	`software-properties-gtk `
+-	`software-properties-gtk `
 - other software->Add
 
 |version|repo|
