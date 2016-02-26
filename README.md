@@ -70,3 +70,15 @@
 |memcheckfull|valgrind --leak-check=full|
 |mcda|make clean dep all|
 |mc|make clean|
+
+
+##change tty resolution for nvidia graphic cards
+	gedit /etc/default/grub
+	GRUB_GFXMODE="640x480"
+	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+	sudo update-grub
+
+
+##Reference
+- [Fix time differences between Ubuntu and Windows](http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html)
+- [How do I change the VGA resolution for the non-graphical TTYs](http://askubuntu.com/questions/96658/how-do-i-change-the-vga-resolution-for-the-non-graphical-ttys)
