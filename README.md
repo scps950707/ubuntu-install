@@ -56,8 +56,13 @@
 
 
 ##nvidia drivers
-- [X] [361.28](http://www.geforce.com.tw/drivers/results/98416)
-- [X] [DOC](http://goo.gl/P52lj0)
+|Version|Page|Download|Doc|
+|------------|-------|-------------|-------------|
+|361.28|[Page](http://www.geforce.com.tw/drivers/results/98416)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run)|[Doc](http://goo.gl/P52lj0)|
+|352.79|[Page](http://www.geforce.com.tw/drivers/results/97671)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.79/NVIDIA-Linux-x86_64-352.79.run)|[Doc](http://goo.gl/H4Q45K)|
+|352.63|[Page](http://www.geforce.com.tw/drivers/results/95281)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.63/NVIDIA-Linux-x86_64-352.63.run)|[Doc](http://goo.gl/DXeutI)|
+|352.55|[Page](http://www.geforce.com.tw/drivers/results/92846)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.55/NVIDIA-Linux-x86_64-352.55.run)|[Doc](http://goo.gl/fQuy88)|
+
 
 
 ##System alias
