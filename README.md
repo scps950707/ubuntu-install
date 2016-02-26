@@ -43,7 +43,7 @@
 - [X] name: `scps950707`
 - [X] email: `scps950707@gmail.com`
 - [X] core.editor: `vim`
-- [X] push.default: `simple` 
+- [X] push.default: `simple`
 - [X] alias co: `commit`
 - [X] alias pu: `push`
 - [X] alias st: `status`
@@ -51,7 +51,7 @@
 
 ##nvidia drivers
 - [X] [361.28](http://www.geforce.com.tw/drivers/results/98416)
-- [X] [DOC](ftp://download.nvidia.com/XFree86/Linux-x86_64/361.28/README/index.html)
+- [X] [DOC](http://goo.gl/P52lj0)
 
 
 ##alias
