@@ -33,7 +33,7 @@ update:
 	sudo apt-get -y install p7zip-full
 	sudo apt-get -y install python-pip
 	sudo apt-get -y install exuberant-ctags
-	sudo apt-get -y install retext
+	# sudo apt-get -y install retext
 	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install compiz-plugins
 	sudo pip install livestreamer
@@ -56,8 +56,9 @@ chrome:
 	rm google-chrome-stable_current_amd64.deb
 
 dropbox:
-	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-	~/.dropbox-dist/dropboxd
+	# TODO
+	# cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+	# ~/.dropbox-dist/dropboxd
 
 docky:
 	sudo add-apt-repository -y ppa:docky-core/stable
@@ -124,4 +125,3 @@ settings:
 
 old:
 	sudo apt-get -y install byobu
-	sudo apt-get -y install docky
