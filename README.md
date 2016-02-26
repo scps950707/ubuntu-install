@@ -1,6 +1,4 @@
-# ubuntu-install
-
-##apt-get install
+##apt-get
 - [X] [git](http://git-scm.com/)
 - [X] [vim-gtk](http://www.vim.org/)
 - [X] [valgrind](http://valgrind.org/)
@@ -29,7 +27,7 @@
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
 
 
-##not apt-get
+##PPA
 - [X] [grub-customizer](https://launchpad.net/grub-customizer)
 - [X] [indicator-sound-switcher](http://yktoo.com/en/software/indicator-sound-switcher)
 - [ ] [dropbox](https://www.dropbox.com/install?os=lnx)
@@ -39,7 +37,7 @@
 - [X] [ubuntu-tweak(0.8.8)](https://launchpad.net/ubuntu-tweak)
 
 
-##git_config
+##git config
 |Config|Description|
 |---------------------|----------------------|
 |name|scps950707|
@@ -65,7 +63,7 @@
 
 
 
-##System alias
+##system alias
 |Commands|target|
 |-----------------|------------------------------------------------|
 |memcheck|valgrind --leak-check=yes|
