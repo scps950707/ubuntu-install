@@ -92,9 +92,9 @@
 ###settings
 ![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/1.png)
 
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/2.png)
-
 ![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/4.png)
+
+![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/3.png)
 
 
 ##Reference
