@@ -40,13 +40,19 @@
 
 
 ##git_config
-- [X] name: `scps950707`
-- [X] email: `scps950707@gmail.com`
-- [X] core.editor: `vim`
-- [X] push.default: `simple`
-- [X] alias co: `commit`
-- [X] alias pu: `push`
-- [X] alias st: `status`
+|Config|Description|
+|---------------------|----------------------|
+|name|scps950707|
+|email|scps950707@gmail.com|
+|core.editor|vim|
+|push.default|simple|
+
+###alias
+|Comands|target|
+|---------------|-----------|
+|co|commit
+|pu|push
+|st|status|
 
 
 ##nvidia drivers
@@ -54,8 +60,10 @@
 - [X] [DOC](http://goo.gl/P52lj0)
 
 
-##alias
-- [X] memcheck: `valgrind --leak-check=yes`
-- [X] memcheckfull: `valgrind --leak-check=full`
-- [X] mcda: `make clean dep all`
-- [X] mc: `make clean`
+##System alias
+|Commands|target|
+|-----------------|------------------------------------------------|
+|memcheck|valgrind --leak-check=yes|
+|memcheckfull|valgrind --leak-check=full|
+|mcda|make clean dep all|
+|mc|make clean|
