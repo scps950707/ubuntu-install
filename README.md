@@ -97,8 +97,15 @@
 ![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/3.png)
 
 
+##Hot key for move window to anyother screen(win7:shift+win+arrow)
+![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/5.png)
+
+![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/6.png)
+
+
 ##Reference
 - [Fix time differences between Ubuntu and Windows](http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html)
 - [How do I change the VGA resolution for the non-graphical TTYs](http://askubuntu.com/questions/96658/how-do-i-change-the-vga-resolution-for-the-non-graphical-ttys)
 - [Ubuntu 15.10/15.04/14.10/14.04/…/12.04 安裝最新的 gcin 中文輸入的完整步驟](http://hyperrate.com/thread.php?tid=28044)
 - [讓 Linux 下的中文輸入法更接近微軟新注音使用體驗](http://goodjack.blogspot.tw/2013/08/linux-phonetic-setting.html)
+- [Quickly place a window to another screen using only the keyboard](http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard)
