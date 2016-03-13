@@ -12,7 +12,6 @@
 - [X] [rar](http://www.rarlabs.com/)
 - [X] [vlc](http://www.videolan.org/vlc/)
 - [X] [gconf-editor](https://projects.gnome.org/gconf/)
-- [X] [docky](http://wiki.go-docky.com/index.php?title=Welcome_to_the_Docky_wiki)
 - [X] [kolourpaint4](http://kolourpaint.org/)
 - [X] [g++](https://gcc.gnu.org/)
 - [X] [dconf-editor](https://wiki.gnome.org/Projects/dconf)
@@ -25,6 +24,7 @@
 - [X] [livestreamer](http://docs.livestreamer.io)
 - [X] [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
+- [X] [tint2](https://gitlab.com/o9000/tint2)
 
 
 ##PPA
@@ -35,6 +35,7 @@
 - [X] [remarkable(1.62)](https://remarkableapp.github.io/)
 - [X] [autojump](https://github.com/joelthelion/autojump)
 - [X] [ubuntu-tweak(0.8.8)](https://launchpad.net/ubuntu-tweak)
+- [ ] [docky](https://launchpad.net/docky)
 
 
 ##git config
@@ -109,3 +110,4 @@
 - [Ubuntu 15.10/15.04/14.10/14.04/…/12.04 安裝最新的 gcin 中文輸入的完整步驟](http://hyperrate.com/thread.php?tid=28044)
 - [讓 Linux 下的中文輸入法更接近微軟新注音使用體驗](http://goodjack.blogspot.tw/2013/08/linux-phonetic-setting.html)
 - [Quickly place a window to another screen using only the keyboard](http://askubuntu.com/questions/22207/quickly-place-a-window-to-another-screen-using-only-the-keyboard)
+

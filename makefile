@@ -96,6 +96,9 @@ nvidia_driver:
 nvidia_autostart:
 	cat nvidia-settings.desktop > ~/.config/autostart/nvidia-settings.desktop
 
+tint2_setting:
+	cat tint2rc > ~/.config/tint2/tint2rc
+
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
 	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
