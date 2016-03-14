@@ -97,7 +97,10 @@ nvidia_autostart:
 	cat nvidia-settings.desktop > ~/.config/autostart/nvidia-settings.desktop
 
 tint2_setting:
+	wget https://raw.githubusercontent.com/scps950707/dotfiles/master/tint2rc
 	cat tint2rc > ~/.config/tint2/tint2rc
+	rm -rf tint2rc
+	killall -SIGUSR1 tint2
 
 alias:
 	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
