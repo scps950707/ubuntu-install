@@ -13,6 +13,7 @@
 - [X] [vlc](http://www.videolan.org/vlc/)
 - [X] [gconf-editor](https://projects.gnome.org/gconf/)
 - [X] [kolourpaint4](http://kolourpaint.org/)
+- [X] [gcc](https://gcc.gnu.org/)
 - [X] [g++](https://gcc.gnu.org/)
 - [X] [dconf-editor](https://wiki.gnome.org/Projects/dconf)
 - [X] [nautilus-open-terminal](https://github.com/GNOME/nautilus)
@@ -25,6 +26,7 @@
 - [X] [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
 - [X] [tint2](https://gitlab.com/o9000/tint2)
+- [X] [cmake](https://cmake.org/)
 
 
 ##PPA

@@ -25,6 +25,7 @@ update:
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
 	sudo apt-get -y install kolourpaint4
+	sudo apt-get -y install gcc
 	sudo apt-get -y install g++
 	sudo apt-get -y install dconf-editor
 	sudo apt-get -y install nautilus-open-terminal
@@ -36,6 +37,7 @@ update:
 	# sudo apt-get -y install retext
 	sudo apt-get -y install compizconfig-settings-manager
 	sudo apt-get -y install compiz-plugins
+	sudo apt-get -y install cmake
 	sudo pip install livestreamer
 
 grub-customizer:
