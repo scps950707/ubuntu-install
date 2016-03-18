@@ -38,6 +38,7 @@
 - [X] [autojump](https://github.com/joelthelion/autojump)
 - [X] [ubuntu-tweak(0.8.8)](https://launchpad.net/ubuntu-tweak)
 - [ ] [docky](https://launchpad.net/docky)
+- [X] [numixproject](https://numixproject.org/)
 
 
 ##git config
