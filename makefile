@@ -124,4 +124,5 @@ settings:
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
 	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
+	gsettings set com.canonical.desktop.interface scrollbar-mode normal
 	sudo sed -i 's/UTC=yes/UTC=no/g' /etc/default/rcS
