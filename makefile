@@ -83,6 +83,12 @@ ubuntu-tweak:
 	sudo apt-get update
 	sudo apt-get install -y ubuntu-tweak
 
+Y_PPA_Manager:
+	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+	sudo apt-get update
+	sudo apt-get -y install y-ppa-manager
+
+
 git_config:
 	git config --global user.name "scps950707"
 	git config --global user.email "scps950707@gmail.com"

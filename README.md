@@ -39,6 +39,7 @@
 - [X] [ubuntu-tweak(0.8.8)](https://launchpad.net/ubuntu-tweak)
 - [ ] [docky](https://launchpad.net/docky)
 - [X] [numixproject](https://numixproject.org/)
+- [X] [y-ppa-manager](https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager)
 
 
 ##git config
@@ -83,9 +84,9 @@
 	sudo update-grub
 
 ##gcin install
-- 	`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3`
+- `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3`
 -	`software-properties-gtk `
-- other software->Add
+-  other software->Add
 
 |version|repo|
 |-----------|---------|
