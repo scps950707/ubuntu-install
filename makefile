@@ -88,16 +88,6 @@ Y_PPA_Manager:
 	sudo apt-get update
 	sudo apt-get -y install y-ppa-manager
 
-
-git_config:
-	git config --global user.name "scps950707"
-	git config --global user.email "scps950707@gmail.com"
-	git config --global core.editor "vim"
-	git config --global push.default "simple"
-	git config --global alias.co commit
-	git config --global alias.pu push
-	git config --global alias.st status
-
 nvidia_driver:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run
 	mv NVIDIA-Linux-x86_64-361.28.run ~/linux_install/

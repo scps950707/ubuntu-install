@@ -42,22 +42,6 @@
 - [X] [y-ppa-manager](https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager)
 
 
-##git config
-|Config|Description|
-|---------------------|----------------------|
-|name|scps950707|
-|email|scps950707@gmail.com|
-|core.editor|vim|
-|push.default|simple|
-
-###alias
-|Comands|target|
-|---------------|-----------|
-|co|commit
-|pu|push
-|st|status|
-
-
 ##nvidia drivers
 |Version|Page|Download|Doc|
 |------------|-------|-------------|-------------|
