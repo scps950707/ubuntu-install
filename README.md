@@ -54,15 +54,6 @@
 
 
 
-##system alias
-|Commands|target|
-|-----------------|------------------------------------------------|
-|memcheck|valgrind --leak-check=yes|
-|memcheckfull|valgrind --leak-check=full|
-|mcda|make clean dep all|
-|mc|make clean|
-
-
 ##change tty resolution for nvidia graphic cards
 	gedit /etc/default/grub
 	GRUB_GFXMODE="640x480"

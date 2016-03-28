@@ -95,12 +95,6 @@ nvidia_driver:
 nvidia_autostart:
 	cat nvidia-settings.desktop > ~/.config/autostart/nvidia-settings.desktop
 
-alias:
-	echo "alias memcheck='valgrind --leak-check=yes'" >> ~/.bashrc
-	echo "alias memcheckfull='valgrind --leak-check=full'" >> ~/.bashrc
-	echo "alias mcda ='make clean dep all'" >> ~/.bashrc
-	echo "alias mc ='make clean'" >> ~/.bashrc
-
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
 
