@@ -25,7 +25,6 @@
 - [X] [livestreamer](http://docs.livestreamer.io)
 - [X] [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
-- [X] [tint2](https://gitlab.com/o9000/tint2)
 - [X] [cmake](https://cmake.org/)
 
 
@@ -41,6 +40,9 @@
 - [X] [numixproject](https://numixproject.org/)
 - [X] [y-ppa-manager](https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager)
 
+##git
+- [X] [tint2](https://gitlab.com/o9000/tint2)
+- [X] [pmenu](https://gitlab.com/o9000/pmenu)
 
 ##git config
 |Config|Description|
