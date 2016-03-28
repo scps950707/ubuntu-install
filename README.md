@@ -44,22 +44,6 @@
 - [X] [tint2](https://gitlab.com/o9000/tint2)
 - [X] [pmenu](https://gitlab.com/o9000/pmenu)
 
-##git config
-|Config|Description|
-|---------------------|----------------------|
-|name|scps950707|
-|email|scps950707@gmail.com|
-|core.editor|vim|
-|push.default|simple|
-
-###alias
-|Comands|target|
-|---------------|-----------|
-|co|commit
-|pu|push
-|st|status|
-
-
 ##nvidia drivers
 |Version|Page|Download|Doc|
 |------------|-------|-------------|-------------|
