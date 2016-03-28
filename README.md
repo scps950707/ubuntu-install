@@ -3,7 +3,7 @@
 - [X] [vim-gtk](http://www.vim.org/)
 - [X] [valgrind](http://valgrind.org/)
 - [X] [unity-tweak-tool](https://launchpad.net/unity-tweak-tool)
-- [X] [classicmenu-indicator](http://www.florian-diesch.de/software/classicmenu-indicator/)
+- [ ] [classicmenu-indicator](http://www.florian-diesch.de/software/classicmenu-indicator/)
 - [X] [synaptic](http://www.nongnu.org/synaptic/)
 - [X] [shutter](http://shutter-project.org/)
 - [X] [eclipse](http://eclipse.org/)

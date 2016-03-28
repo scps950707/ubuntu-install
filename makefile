@@ -15,7 +15,7 @@ update:
 	sudo apt-get -y install vim-gtk
 	sudo apt-get -y install valgrind
 	sudo apt-get -y install unity-tweak-tool
-	sudo apt-get -y install classicmenu-indicator
+	# sudo apt-get -y install classicmenu-indicator
 	sudo apt-get -y install synaptic
 	sudo apt-get -y install shutter
 	sudo apt-get -y install eclipse
