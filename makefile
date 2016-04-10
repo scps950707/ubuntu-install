@@ -3,7 +3,7 @@ all:install
 help:
 	@echo "make install"
 
-install:folder update not-apt-get git_config
+install:folder update not-apt-get
 
 not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable
 
@@ -18,9 +18,9 @@ update:
 	# sudo apt-get -y install classicmenu-indicator
 	sudo apt-get -y install synaptic
 	sudo apt-get -y install shutter
-	sudo apt-get -y install eclipse
+	# sudo apt-get -y install eclipse
 	sudo apt-get -y install filezilla
-	sudo apt-get -y install codeblocks
+	# sudo apt-get -y install codeblocks
 	sudo apt-get -y install rar
 	sudo apt-get -y install vlc
 	sudo apt-get -y install gconf-editor
