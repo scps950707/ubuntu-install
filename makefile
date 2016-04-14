@@ -58,16 +58,6 @@ chrome:
 	cp google-chrome-stable_current_amd64.deb ~/linux_install/
 	rm google-chrome-stable_current_amd64.deb
 
-dropbox:
-	# TODO
-	# cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-	# ~/.dropbox-dist/dropboxd
-
-docky:
-	sudo add-apt-repository -y ppa:docky-core/stable
-	sudo apt-get update
-	sudo apt-get -y install docky
-
 remarkable:
 	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb
 	mv remarkable_1.62_all.deb ~/linux_install/
