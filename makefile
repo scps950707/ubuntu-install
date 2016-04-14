@@ -5,7 +5,7 @@ help:
 
 install:folder update not-apt-get
 
-not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable Y_PPA_Manager grub-customizer numix_icon
+not-apt-get: chrome autojump remarkable PPA
 
 folder:
 	mkdir ~/linux_install -p
@@ -41,15 +41,18 @@ update:
 	# sudo apt-get -y install byobu
 	sudo pip install livestreamer
 
-grub-customizer:
+PPA:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+	sudo apt-add-repository -y ppa:yktooo/ppa
+	sudo add-apt-repository -y ppa:tualatrix/ppa
+	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-get update
 	sudo apt-get -y install grub-customizer
-
-indicator-sound-switcher:
-	sudo apt-add-repository -y ppa:yktooo/ppa
-	sudo apt-get update
 	sudo apt-get -y install indicator-sound-switcher
+	sudo apt-get -y install ubuntu-tweak
+	sudo apt-get -y install y-ppa-manager
+	sudo apt-get -y install numix-icon-theme-circle
 
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
@@ -67,21 +70,6 @@ autojump:
 	cd autojump && ./install.py
 	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
 	rm -rf autojump/
-
-ubuntu-tweak:
-	sudo add-apt-repository -y ppa:tualatrix/ppa
-	sudo apt-get update
-	sudo apt-get install -y ubuntu-tweak
-
-Y_PPA_Manager:
-	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-	sudo apt-get update
-	sudo apt-get -y install y-ppa-manager
-
-numix_icon:
-	sudo apt-add-repository -y ppa:numix/ppa
-	sudo apt-get update
-	sudo apt-get install numix-icon-theme-circle
 
 nvidia_driver:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run
