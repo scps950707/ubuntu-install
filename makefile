@@ -5,7 +5,7 @@ help:
 
 install:folder update not-apt-get
 
-not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable
+not-apt-get: indicator-sound-switcher chrome autojump ubuntu-tweak remarkable Y_PPA_Manager grub-customizer numix_icon
 
 folder:
 	mkdir ~/linux_install -p
@@ -77,6 +77,11 @@ Y_PPA_Manager:
 	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-get update
 	sudo apt-get -y install y-ppa-manager
+
+numix_icon:
+	sudo apt-add-repository -y ppa:numix/ppa
+	sudo apt-get update
+	sudo apt-get install numix-icon-theme-circle
 
 nvidia_driver:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run
