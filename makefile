@@ -72,7 +72,7 @@ remarkable:
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
 	cd autojump && ./install.py
-	echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
+	# echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
 	rm -rf autojump/
 
 nvidia_driver:
