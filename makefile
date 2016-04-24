@@ -76,8 +76,8 @@ autojump:
 	rm -rf autojump/
 
 nvidia_driver:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run
-	mv NVIDIA-Linux-x86_64-361.28.run ~/linux_install/
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run
+	mv NVIDIA-Linux-x86_64-361.42.run ~/linux_install/
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
