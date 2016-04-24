@@ -3,7 +3,7 @@ all:install
 help:
 	@echo "make install"
 
-install:folder update not-apt-get
+install:folder update not-apt-get PIP
 
 not-apt-get: chrome autojump remarkable PPA
 
@@ -39,7 +39,11 @@ update:
 	sudo apt-get -y install compiz-plugins
 	sudo apt-get -y install cmake
 	# sudo apt-get -y install byobu
+	sudo apt-get -y install python-dev
+
+PIP:
 	sudo pip install livestreamer
+	sudo -H pip install thefuck
 
 PPA:
 	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer

@@ -22,7 +22,6 @@
 - [X] [p7zip](http://www.7-zip.org/)
 - [X] [exuberant-ctags](http://ctags.sourceforge.net/)
 - [ ] [retext](https://github.com/retext-project/retext)
-- [X] [livestreamer](http://docs.livestreamer.io)
 - [X] [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
 - [X] [cmake](https://cmake.org/)
@@ -39,6 +38,10 @@
 - [ ] [docky](https://launchpad.net/docky)
 - [X] [numixproject](https://numixproject.org/)
 - [X] [y-ppa-manager](https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager)
+
+##PIP
+- [X] [livestreamer](http://docs.livestreamer.io)
+- [X] [thefuck](https://github.com/nvbn/thefuck)
 
 ##git
 - [X] [tint2](https://gitlab.com/o9000/tint2)
