@@ -11,35 +11,31 @@ folder:
 	mkdir ~/linux_install -p
 
 update:
-	sudo apt-get -y install git
-	sudo apt-get -y install vim-gtk
-	sudo apt-get -y install valgrind
-	sudo apt-get -y install unity-tweak-tool
-	# sudo apt-get -y install classicmenu-indicator
-	sudo apt-get -y install synaptic
-	sudo apt-get -y install shutter
-	# sudo apt-get -y install eclipse
-	sudo apt-get -y install filezilla
-	# sudo apt-get -y install codeblocks
-	sudo apt-get -y install rar
-	sudo apt-get -y install vlc
-	sudo apt-get -y install gconf-editor
-	sudo apt-get -y install kolourpaint4
-	sudo apt-get -y install gcc
-	sudo apt-get -y install g++
-	sudo apt-get -y install dconf-editor
-	sudo apt-get -y install nautilus-open-terminal
-	sudo apt-get -y install enca
-	sudo apt-get -y install terminator
-	sudo apt-get -y install p7zip-full
-	sudo apt-get -y install python-pip
-	sudo apt-get -y install exuberant-ctags
-	# sudo apt-get -y install retext
-	sudo apt-get -y install compizconfig-settings-manager
-	sudo apt-get -y install compiz-plugins
-	sudo apt-get -y install cmake
-	# sudo apt-get -y install byobu
-	sudo apt-get -y install python-dev
+	sudo apt-get -y install \
+	git \
+	vim-gtk \
+	valgrind \
+	unity-tweak-tool \
+	synaptic \
+	shutter \
+	filezilla \
+	rar \
+	vlc \
+	gconf-editor \
+	kolourpaint4 \
+	gcc \
+	g++ \
+	dconf-editor \
+	nautilus-open-terminal \
+	enca \
+	terminator \
+	p7zip-full \
+	python-pip \
+	exuberant-ctags \
+	compizconfig-settings-manager \
+	compiz-plugins \
+	cmake \
+	python-dev
 
 PIP:
 	sudo pip install livestreamer
@@ -52,11 +48,12 @@ PPA:
 	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-get update
-	sudo apt-get -y install grub-customizer
-	sudo apt-get -y install indicator-sound-switcher
-	sudo apt-get -y install ubuntu-tweak
-	sudo apt-get -y install y-ppa-manager
-	sudo apt-get -y install numix-icon-theme-circle
+	sudo apt-get -y install \
+	grub-customizer \
+	indicator-sound-switcher \
+	ubuntu-tweak \
+	y-ppa-manager \
+	numix-icon-theme-circle
 
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
