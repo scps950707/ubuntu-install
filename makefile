@@ -62,6 +62,18 @@ PPA:
 	y-ppa-manager \
 	numix-icon-theme-circle
 
+tint2:
+	sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
+	( cd $(githubDir) && \
+	git clone https://gitlab.com/o9000/tint2.git && \
+	cd tint2 && \
+	mkdir build && \
+	cd build && \
+	cmake .. && \
+	make && \
+	sudo make install )
+	cat ./tint2.desktop > ~/.config/autostart/tint2.desktop
+
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
