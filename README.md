@@ -25,6 +25,9 @@
 - [X] [compizconfig-settings-manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
 - [X] [compiz-plugins](https://apps.ubuntu.com/cat/applications/compiz-plugins/)
 - [X] [cmake](https://cmake.org/)
+- [X] [python-dev](https://www.python.org/)
+- [X] [checkinstall](http://checkinstall.izto.org/)
+- [X] [tree](http://mama.indstate.edu/users/ice/tree/)
 
 
 ##PPA

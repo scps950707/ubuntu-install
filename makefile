@@ -35,7 +35,9 @@ update:
 	compizconfig-settings-manager \
 	compiz-plugins \
 	cmake \
-	python-dev
+	python-dev \
+	checkinstall \
+	tree
 
 PIP:
 	sudo pip install livestreamer
