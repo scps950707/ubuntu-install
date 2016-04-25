@@ -1,3 +1,7 @@
+currentDir=$(PWD)
+installDir=~/install
+githubDir=~/github
+
 all:install
 
 help:
@@ -8,7 +12,8 @@ install:folder update not-apt-get PIP
 not-apt-get: chrome autojump remarkable PPA
 
 folder:
-	mkdir ~/linux_install -p
+	mkdir $(installDir) -p
+	mkdir $(githubDir) -p
 
 update:
 	sudo apt-get -y install \
@@ -66,7 +71,7 @@ chrome:
 
 remarkable:
 	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb
-	mv remarkable_1.62_all.deb ~/linux_install/
+	mv remarkable_1.62_all.deb $(installDir)
 
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
@@ -76,7 +81,7 @@ autojump:
 
 nvidia_driver:
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run
-	mv NVIDIA-Linux-x86_64-361.42.run ~/linux_install/
+	mv NVIDIA-Linux-x86_64-361.42.run $(installDir)
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
