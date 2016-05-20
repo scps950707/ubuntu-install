@@ -28,6 +28,7 @@
 - [X] [python-dev](https://www.python.org/)
 - [X] [checkinstall](http://checkinstall.izto.org/)
 - [X] [tree](http://mama.indstate.edu/users/ice/tree/)
+- [X] [cmake-gui](https://cmake.org/)
 
 
 ##PPA

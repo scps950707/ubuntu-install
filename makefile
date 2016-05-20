@@ -42,7 +42,8 @@ update:
 	cmake \
 	python-dev \
 	checkinstall \
-	tree
+	tree \
+	cmake-qt-gui
 
 PIP:
 	sudo pip install livestreamer
