@@ -79,14 +79,6 @@
 |15.04|`deb http://hyperrate.com/gcin-ubuntu1504 eliu release`|
 |15.10|`deb http://hyperrate.com/gcin-ubuntu1510 eliu release`|
 
-###settings
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/1.png)
-
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/4.png)
-
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/3.png)
-
-
 ##Hot key for move window to anyother screen(win7:shift+win+arrow)
 ![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/5.png)
 

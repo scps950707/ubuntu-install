@@ -75,6 +75,9 @@ tint2:
 	sudo make install )
 	cat ./tint2.desktop > ~/.config/autostart/tint2.desktop
 
+gcin_setting:
+	cp gcinconfig/* ~/.gcin/config/
+
 chrome:
 	sudo apt-get install libxss1 libappindicator1 libindicator7
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
