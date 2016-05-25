@@ -132,6 +132,8 @@ settings:
 	gsettings set com.canonical.indicator.datetime show-day true
 	# gedit
 	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false
+	gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
+	gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
 	# Unity Fonts
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
 	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
