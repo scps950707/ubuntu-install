@@ -73,7 +73,7 @@ tint2:
 	cmake .. && \
 	make && \
 	sudo make install )
-	cat ./tint2.desktop > ~/.config/autostart/tint2.desktop
+	cat ./appLauncher/tint2.desktop > ~/.config/autostart/tint2.desktop
 
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
