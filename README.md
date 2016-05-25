@@ -68,17 +68,6 @@
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 	sudo update-grub
 
-##gcin install
-- `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3`
--	`software-properties-gtk `
--  other software->Add
-
-|version|repo|
-|-----------|---------|
-|12.04~14.10|`deb http://hyperrate.com/debian eliu release`|
-|15.04|`deb http://hyperrate.com/gcin-ubuntu1504 eliu release`|
-|15.10|`deb http://hyperrate.com/gcin-ubuntu1510 eliu release`|
-
 ##Hot key for move window to anyother screen(win7:shift+win+arrow)
 ![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/5.png)
 

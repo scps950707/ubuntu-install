@@ -9,7 +9,7 @@ help:
 
 install:folder update not-apt-get PIP
 
-not-apt-get: chrome autojump remarkable PPA
+not-apt-get: chrome autojump remarkable PPA gcin
 
 folder:
 	mkdir $(installDir) -p
@@ -75,7 +75,11 @@ tint2:
 	sudo make install )
 	cat ./tint2.desktop > ~/.config/autostart/tint2.desktop
 
-gcin_setting:
+gcin:
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
+	grep "deb http://hyperrate.com/debian eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/debian eliu release" >> /etc/apt/sources.list
+	sudo apt-get update
+	sudo apt-get install gcin
 	cp gcinconfig/* ~/.gcin/config/
 
 chrome:
