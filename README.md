@@ -60,19 +60,11 @@
 |352.79|[Page](http://www.geforce.com.tw/drivers/results/97671)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.79/NVIDIA-Linux-x86_64-352.79.run)|[Doc](http://goo.gl/H4Q45K)|
 |352.63|[Page](http://www.geforce.com.tw/drivers/results/95281)|[Download](http://tw.download.nvidia.com/XFree86/Linux-x86_64/352.63/NVIDIA-Linux-x86_64-352.63.run)|[Doc](http://goo.gl/DXeutI)|
 
-
-
 ##change tty resolution for nvidia graphic cards
 	gedit /etc/default/grub
 	GRUB_GFXMODE="640x480"
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 	sudo update-grub
-
-##Hot key for move window to anyother screen(win7:shift+win+arrow)
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/5.png)
-
-![](https://raw.githubusercontent.com/scps950707/ubuntu-install/master/pic/6.png)
-
 
 ##Reference
 - [Fix time differences between Ubuntu and Windows](http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html)
