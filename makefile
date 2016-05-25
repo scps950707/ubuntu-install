@@ -107,20 +107,36 @@ homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
 
 settings:
-	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false #gedit auto save false
+	# brightness and lock
+	gsettings set org.gnome.desktop.screensaver lock-enabled false
+	gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+	gsettings set org.gnome.desktop.session idle-delay 0
+	# appearance
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1
+	gsettings set com.canonical.Unity integrated-menus true
+	# safety and privacy
+	gsettings set org.gnome.desktop.privacy remember-recent-files false
+	gsettings set com.canonical.Unity.Lenses remote-content-search 'none'
+	# text input
+	gsettings set com.canonical.indicator.keyboard visible false
+	gsettings set org.gnome.libgnomekbd.desktop group-per-window false
+	# blueteeth
+	gsettings set com.canonical.indicator.bluetooth visible false
+	# power
+	gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+	# monitor
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-capture-mouse false
+	# time and date
+	gsettings set com.canonical.indicator.datetime show-date true
+	gsettings set com.canonical.indicator.datetime show-day true
+	# gedit
+	gsettings set org.gnome.gedit.preferences.editor create-backup-copy false
+	# Unity Fonts
 	gsettings set org.gnome.desktop.interface document-font-name 'Sans 14'
 	gsettings set org.gnome.desktop.interface font-name 'Ubuntu 14'
 	gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 14'
 	gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 14'
-	gsettings set org.gnome.desktop.privacy remember-recent-files false # 紀錄檔案和應用程式使用狀況
-	gsettings set org.gnome.desktop.screensaver lock-enabled false # 鎖定
-	gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false #從暫停狀態下喚醒需要密碼
-	gsettings set com.canonical.indicator.datetime show-date true #日期與月份
-	gsettings set com.canonical.indicator.datetime show-day true #星期幾
-	gsettings set com.canonical.Unity.Lenses remote-content-search 'none' #包含線上搜尋結果
-	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-capture-mouse false #黏性邊界
-	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1 #自動隱藏launcher
-	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1 #左上角顯示launcher
-	gsettings set com.canonical.Unity integrated-menus true #在視窗顯示工具列
+	# other
 	gsettings set com.canonical.desktop.interface scrollbar-mode normal
 	sudo sed -i 's/UTC=yes/UTC=no/g' /etc/default/rcS
