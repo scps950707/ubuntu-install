@@ -50,10 +50,10 @@ PIP:
 	sudo -H pip install thefuck
 
 PPA:
-	sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+	sudo apt-add-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-add-repository -y ppa:yktooo/ppa
-	sudo add-apt-repository -y ppa:tualatrix/ppa
-	sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+	sudo apt-add-repository -y ppa:tualatrix/ppa
+	sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-get update
 	sudo apt-get -y install \
