@@ -16,34 +16,7 @@ folder:
 	mkdir $(githubDir) -p
 
 update:
-	sudo apt-get -y install \
-	git \
-	vim-gtk \
-	valgrind \
-	unity-tweak-tool \
-	synaptic \
-	shutter \
-	filezilla \
-	rar \
-	vlc \
-	gconf-editor \
-	kolourpaint4 \
-	gcc \
-	g++ \
-	dconf-editor \
-	nautilus-open-terminal \
-	enca \
-	terminator \
-	p7zip-full \
-	python-pip \
-	exuberant-ctags \
-	compizconfig-settings-manager \
-	compiz-plugins \
-	cmake \
-	python-dev \
-	checkinstall \
-	tree \
-	cmake-qt-gui
+	sudo apt-get -y install `cat aptPackage`
 
 PIP:
 	sudo pip install livestreamer
