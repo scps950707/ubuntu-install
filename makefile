@@ -1,6 +1,7 @@
 currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
+nvidiaVersion=361.42
 
 all:install
 
@@ -9,7 +10,7 @@ help:
 
 install:folder update not-apt-get PIP
 
-not-apt-get: chrome autojump remarkable PPA gcin
+not-apt-get: deb_run autojump PPA gcin
 
 folder:
 	mkdir $(installDir) -p
@@ -55,26 +56,17 @@ gcin:
 	sudo apt-get install gcin
 	cp gcinconfig/* ~/.gcin/config/
 
-chrome:
-	sudo apt-get install libxss1 libappindicator1 libindicator7
-	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-	sudo dpkg -i google-chrome-stable_current_amd64.deb
-	cp google-chrome-stable_current_amd64.deb ~/linux_install/
-	rm google-chrome-stable_current_amd64.deb
-
-remarkable:
-	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb
-	mv remarkable_1.62_all.deb $(installDir)
+deb_run:
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ${installDir}
+	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb -P ${installDir}
+	wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb -P ${installDir}
+	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
 
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
 	cd autojump && ./install.py
 	# echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
 	rm -rf autojump/
-
-nvidia_driver:
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run
-	mv NVIDIA-Linux-x86_64-361.42.run $(installDir)
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
