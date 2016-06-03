@@ -29,13 +29,15 @@ PPA:
 	sudo apt-add-repository -y ppa:tualatrix/ppa
 	sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-add-repository -y ppa:numix/ppa
+	sudo apt-add-repository -y ppa:libreoffice/ppa
 	sudo apt-get update
 	sudo apt-get -y install \
 	grub-customizer \
 	indicator-sound-switcher \
 	ubuntu-tweak \
 	y-ppa-manager \
-	numix-icon-theme-circle
+	numix-icon-theme-circle \
+	libreoffice
 
 tint2:
 	sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
