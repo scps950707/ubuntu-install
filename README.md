@@ -51,6 +51,7 @@
 - [X] [tint2](https://gitlab.com/o9000/tint2)
 - [X] [pmenu](https://gitlab.com/o9000/pmenu)
 - [X] [snwh/paper-gtk-theme](https://github.com/snwh/paper-gtk-theme)
+- [X] [git-extras](https://github.com/tj/git-extras)
 
 ##nvidia drivers
 |Version|Page|Download|Doc|
