@@ -26,3 +26,4 @@ checkinstall
 tree
 cmake-qt-gui
 dos2unix
+colordiff
