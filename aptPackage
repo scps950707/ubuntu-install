@@ -27,3 +27,8 @@ tree
 cmake-qt-gui
 dos2unix
 colordiff
+gawk
+python-dev
+python3-dev
+build-essential
+cmake
