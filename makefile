@@ -60,7 +60,7 @@ gcin:
 
 deb_run:
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ${installDir}
-	wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb -P ${installDir}
+	wget https://remarkableapp.github.io/files/remarkable_1.75_all.deb -P ${installDir}
 	wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb -P ${installDir}
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
 
