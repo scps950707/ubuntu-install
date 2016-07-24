@@ -68,6 +68,8 @@ deb_run:
 	sudo gdebi -n ${installDir}/Messenger_linux64.deb
 	wget https://go.skype.com/skypeforlinux-64-alpha.deb -P ${installDir}
 	sudo gdebi -n ${installDir}/skypeforlinux-64-alpha.deb
+	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -P ${installDir}
+	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
 
 
