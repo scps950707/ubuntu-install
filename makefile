@@ -1,7 +1,7 @@
 currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
-nvidiaVersion=361.42
+nvidiaVersion=367.35
 
 all:install
 
@@ -40,7 +40,7 @@ PPA:
 	libreoffice
 
 tint2:
-	sudo apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
+	sudo apt-get -y install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
 	( cd $(githubDir) && \
 	git clone https://gitlab.com/o9000/tint2.git && \
 	cd tint2 && \
@@ -49,20 +49,27 @@ tint2:
 	cmake .. && \
 	make && \
 	sudo make install )
-	cat ./appLauncher/tint2.desktop > ~/.config/autostart/tint2.desktop
+	mkdir -p ~/.config/autostart/ && cat ./appLauncher/tint2.desktop > ~/.config/autostart/tint2.desktop
 
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
 	grep "deb http://hyperrate.com/debian eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/debian eliu release" >> /etc/apt/sources.list
 	sudo apt-get update
 	sudo apt-get install gcin
+	mkdir -p ~/.gcin && mkdir -p ~/.gcin/config
 	cp gcinconfig/* ~/.gcin/config/
 
 deb_run:
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ${installDir}
+	sudo gdebi -n ${installDir}/google-chrome-stable_current_amd64.deb
 	wget https://remarkableapp.github.io/files/remarkable_1.75_all.deb -P ${installDir}
+	sudo gdebi -n ${installDir}/remarkable_1.75_all.deb
 	wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb -P ${installDir}
+	sudo gdebi -n ${installDir}/Messenger_linux64.deb
+	wget https://go.skype.com/skypeforlinux-64-alpha.deb -P ${installDir}
+	sudo gdebi -n ${installDir}/skypeforlinux-64-alpha.deb
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
+
 
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
