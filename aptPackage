@@ -1,7 +1,6 @@
 build-essential
 checkinstall
 cmake
-cmake
 cmake-qt-gui
 colordiff
 compizconfig-settings-manager
@@ -21,7 +20,6 @@ kolourpaint4
 nautilus-open-terminal
 p7zip-full
 python3-dev
-python-dev
 python-dev
 python-pip
 rar
