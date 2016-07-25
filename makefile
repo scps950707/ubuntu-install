@@ -8,9 +8,9 @@ all:install
 help:
 	@echo "make install"
 
-install:folder update not-apt-get PIP
+install:folder update third_party
 
-not-apt-get: deb_run autojump PPA gcin clang
+third_party: deb_run autojump PPA gcin clang pip git-extra
 
 folder:
 	mkdir $(installDir) -p
@@ -19,7 +19,7 @@ folder:
 update:
 	sudo apt-get -y install `cat aptPackage`
 
-PIP:
+pip:
 	sudo pip install livestreamer
 	sudo -H pip install thefuck
 
@@ -76,7 +76,6 @@ deb_run:
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
 
-
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
 	cd autojump && ./install.py
@@ -91,6 +90,9 @@ clang:
 	sudo apt-get install -y clang-3.8 libclang-3.8
 	sudo ln -sf /usr/bin/clang-3.8 /usr/bin/clang
 	sudo ln -sf /usr/bin/clang++-3.8 /usr/bin/clang++
+
+git-extra:
+	curl -sSL http://git.io/git-extras-setup | sudo bash /dev/stdin
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
