@@ -53,9 +53,9 @@ tint2:
 
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
-	grep "deb http://hyperrate.com/debian eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/debian eliu release" >> /etc/apt/sources.list
+	grep "deb http://hyperrate.com/debian eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/debian eliu release" | sudo tee -a /etc/apt/sources.list
 	sudo apt-get update
-	sudo apt-get install gcin
+	sudo apt-get install -y gcin
 	mkdir -p ~/.gcin && mkdir -p ~/.gcin/config
 	cp gcinconfig/* ~/.gcin/config/
 
@@ -81,10 +81,10 @@ autojump:
 
 clang:
 	wget http://apt.llvm.org/llvm-snapshot.gpg.key && sudo apt-key add llvm-snapshot.gpg.key && rm llvm-snapshot.gpg.key
-	grep "^deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" /etc/apt/sources.list > /dev/null || echo "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" >> /etc/apt/sources.list
-	grep "^deb-src http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" /etc/apt/sources.list > /dev/null || echo "deb-src http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" >> /etc/apt/sources.list
+	grep "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" /etc/apt/sources.list > /dev/null || echo "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" | sudo tee -a /etc/apt/sources.list
+	grep "deb-src http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" /etc/apt/sources.list > /dev/null || echo "deb-src http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main" | sudo tee -a /etc/apt/sources.list
 	sudo apt-get update
-	sudo apt-get install clang-3.8 libclang-3.8
+	sudo apt-get install -y clang-3.8 libclang-3.8
 	sudo ln -sf /usr/bin/clang-3.8 /usr/bin/clang
 	sudo ln -sf /usr/bin/clang++-3.8 /usr/bin/clang++
 
