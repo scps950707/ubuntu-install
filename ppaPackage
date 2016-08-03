@@ -1,9 +1,9 @@
+g++-5
+gcc-5
+git
 grub-customizer
 indicator-sound-switcher
+libreoffice
+numix-icon-theme-circle
 ubuntu-tweak
 y-ppa-manager
-numix-icon-theme-circle
-libreoffice
-gcc-5
-g++-5
-git
