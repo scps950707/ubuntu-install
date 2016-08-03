@@ -18,6 +18,7 @@ folder:
 
 update:
 	sudo apt-get -y install `cat aptPackage`
+	sudo apt-get -y install `cat ppaPackage`
 
 pip:
 	sudo pip install livestreamer
@@ -31,16 +32,9 @@ PPA:
 	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-add-repository -y ppa:libreoffice/ppa
 	sudo apt-add-repository -y ppa:ubuntu-toolchain-r/test
+	sudo apt-add-repository -y ppa:git-core/ppa
 	sudo apt-get update
-	sudo apt-get -y install \
-	grub-customizer \
-	indicator-sound-switcher \
-	ubuntu-tweak \
-	y-ppa-manager \
-	numix-icon-theme-circle \
-	libreoffice \
-	gcc-5 \
-	g++-5
+	sudo apt-get -y install `cat ppaPackage`
 	sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 
 tint2:
