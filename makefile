@@ -1,7 +1,6 @@
 currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
-nvidiaVersion=367.35
 
 all:install
 
@@ -68,7 +67,6 @@ deb_run:
 	sudo gdebi -n ${installDir}/skypeforlinux-64-alpha.deb
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
-	wget http://tw.download.nvidia.com/XFree86/Linux-x86_64/$(nvidiaVersion)/NVIDIA-Linux-x86_64-$(nvidiaVersion).run -P ${installDir}
 
 autojump:
 	git clone git://github.com/joelthelion/autojump.git
