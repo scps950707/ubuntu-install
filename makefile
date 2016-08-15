@@ -63,8 +63,6 @@ deb_run:
 	sudo gdebi -n ${installDir}/remarkable_1.75_all.deb
 	wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb -P ${installDir}
 	sudo gdebi -n ${installDir}/Messenger_linux64.deb
-	wget https://go.skype.com/skypeforlinux-64-alpha.deb -P ${installDir}
-	sudo gdebi -n ${installDir}/skypeforlinux-64-alpha.deb
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 
