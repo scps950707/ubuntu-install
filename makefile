@@ -46,7 +46,7 @@ tint2:
 
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
-	grep "deb http://hyperrate.com/debian eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/debian eliu release" | sudo tee -a /etc/apt/sources.list
+	grep "deb http://hyperrate.com/gcin-ubuntu1604 eliu release" /etc/apt/sources.list > /dev/null || echo "deb http://hyperrate.com/gcin-ubuntu1604 eliu release" | sudo tee -a /etc/apt/sources.list
 	sudo apt-get update
 	sudo apt-get install -y gcin
 	mkdir -p ~/.gcin && mkdir -p ~/.gcin/config
