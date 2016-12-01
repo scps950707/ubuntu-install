@@ -109,4 +109,4 @@ settings:
 	gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 14'
 	# other
 	gsettings set com.canonical.desktop.interface scrollbar-mode normal
-	sudo sed -i 's/UTC=yes/UTC=no/g' /etc/default/rcS
+	timedatectl set-local-rtc 1 --adjust-system-clock
