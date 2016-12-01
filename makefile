@@ -29,6 +29,7 @@ PPA:
 	sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-add-repository -y ppa:git-core/ppa
+	sudo apt-add-repository -y ppa:trebelnik-stefina/ubuntu-tweak
 	sudo apt-get update
 	sudo apt-get -y install `cat ppaPackage`
 
