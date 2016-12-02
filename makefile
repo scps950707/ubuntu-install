@@ -2,14 +2,11 @@ currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
 
-all:install
+all:folder update third_party config
 
-help:
-	@echo "make install"
+third_party: deb_run autojump PPA gcin pip git-extra tint2 gcin
 
-install:folder update third_party
-
-third_party: deb_run autojump PPA gcin pip git-extra
+config:dotfiles settings
 
 folder:
 	mkdir $(installDir) -p
@@ -74,6 +71,14 @@ git-extra:
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
+
+dotfiles:
+	(
+		cd $(githubDir) && \
+		git clone git@github.com:scps950707/dotfiles.git && \
+		cd dotfiles && \
+		make
+	)
 
 settings:
 	# brightness and lock
