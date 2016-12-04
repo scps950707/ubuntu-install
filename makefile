@@ -73,12 +73,10 @@ homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
 
 dotfiles:
-	(
-		cd $(githubDir) && \
+	( cd $(githubDir) && \
 		git clone git@github.com:scps950707/dotfiles.git && \
 		cd dotfiles && \
-		make
-	)
+		make )
 
 settings:
 	# brightness and lock
