@@ -2,9 +2,9 @@ currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
 
-all:folder update third_party config
+all:folder aptPackage ppaRepo ppaPackage third_party config
 
-third_party: deb_run autojump PPA gcin pip git-extra tint2 gcin
+third_party: deb_run autojump pip git-extra tint2 gcin
 
 config:dotfiles settings
 
@@ -16,11 +16,17 @@ update:
 	sudo apt-get -y install `cat aptPackage`
 	sudo apt-get -y install `cat ppaPackage`
 
+aptPackage:
+	sudo apt-get -y install `cat aptPackage`
+
+ppaPackage:
+	sudo apt-get -y install `cat ppaPackage`
+
 pip:
 	sudo pip install livestreamer
 	sudo -H pip install thefuck
 
-PPA:
+ppaRepo:
 	sudo apt-add-repository -y ppa:danielrichter2007/grub-customizer
 	sudo apt-add-repository -y ppa:yktooo/ppa
 	sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager
@@ -28,7 +34,6 @@ PPA:
 	sudo apt-add-repository -y ppa:git-core/ppa
 	sudo apt-add-repository -y ppa:trebelnik-stefina/ubuntu-tweak
 	sudo apt-get update
-	sudo apt-get -y install `cat ppaPackage`
 
 tint2:
 	sudo apt-get -y install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
