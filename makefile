@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder aptPackage ppaRepo ppaPackage third_party config
 
-third_party: deb_run autojump pip git-extra tint2 gcin
+third_party: deb_run autojump pip git-extra tint2 gcin streamlink-twitch-gui
 
 config:dotfiles settings
 
@@ -74,6 +74,13 @@ autojump:
 
 git-extra:
 	curl -sSL http://git.io/git-extras-setup | sudo bash /dev/stdin
+
+streamlink-twitch-gui:
+	( cd ~ && \
+	wget https://github.com/streamlink/streamlink-twitch-gui/releases/download/v1.0.0/streamlink-twitch-gui-v1.0.0-linux64.tar.gz && \
+	tar xvzf streamlink-twitch-gui-v1.0.0-linux64.tar.gz )
+	cp ./appLauncher/streamlink-twitch-gui.desktop ~/.local/share/applications
+	cp ~/streamlink-twitch-gui/icons/icon-48.png ~/.local/share/icons/hicolor/48x48/apps/streamlink-twitch-gui.png
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
