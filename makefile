@@ -45,7 +45,7 @@ tint2:
 	cmake .. && \
 	make && \
 	sudo make install )
-	mkdir -p ~/.config/autostart/ && cat ./appLauncher/tint2.desktop > ~/.config/autostart/tint2.desktop
+	cp /usr/local/share/applications/tint2.desktop ~/.config/autostart/
 
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
