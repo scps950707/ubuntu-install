@@ -32,7 +32,7 @@ ppaRepo:
 	sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager
 	sudo apt-add-repository -y ppa:numix/ppa
 	sudo apt-add-repository -y ppa:git-core/ppa
-	sudo apt-add-repository -y ppa:trebelnik-stefina/ubuntu-tweak
+	sudo add-apt-repository -y ppa:gerardpuig/ppa
 	sudo apt-get update
 
 tint2:
