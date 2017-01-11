@@ -23,7 +23,7 @@ ppaPackage:
 	sudo apt-get -y install `cat ppaPackage`
 
 pip:
-	sudo pip install streamlink
+	sudo -H pip install streamlink
 	sudo -H pip install thefuck
 
 ppaRepo:
