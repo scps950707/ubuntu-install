@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder aptPackage ppaRepo ppaPackage third_party config
 
-third_party: deb_run autojump pip git-extra tint2 gcin streamlink-twitch-gui
+third_party: deb_run autojump pip git-extra gcin streamlink-twitch-gui
 
 config:dotfiles settings
 
@@ -97,7 +97,7 @@ settings:
 	gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
 	gsettings set org.gnome.desktop.session idle-delay 0
 	# appearance
-	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1
+	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 	gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ reveal-trigger 1
 	gsettings set com.canonical.Unity integrated-menus true
 	# safety and privacy
