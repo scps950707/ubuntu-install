@@ -69,10 +69,10 @@ git-extra:
 
 streamlink-twitch-gui:
 	( cd ~ && \
-	wget https://github.com/streamlink/streamlink-twitch-gui/releases/download/v1.0.0/streamlink-twitch-gui-v1.0.0-linux64.tar.gz && \
-	tar xvzf streamlink-twitch-gui-v1.0.0-linux64.tar.gz )
-	cp ./appLauncher/streamlink-twitch-gui.desktop ~/.local/share/applications
-	cp ~/streamlink-twitch-gui/icons/icon-48.png ~/.local/share/icons/hicolor/48x48/apps/streamlink-twitch-gui.png
+	wget `curl -s https://api.github.com/repos/streamlink/streamlink-twitch-gui/releases | grep 'browser_download_url.*linux64.tar.gz'| head -n 1 | cut -d '"' -f 4` -O streamlink-twitch-gui-linux64.tar.gz && \
+	tar xvzf streamlink-twitch-gui-linux64.tar.gz && \
+	cd streamlink-twitch-gui && \
+	./add-menuitem.sh )
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
