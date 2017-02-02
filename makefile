@@ -60,8 +60,6 @@ deb_run:
 	sudo gdebi -n ${installDir}/google-chrome-stable_current_amd64.deb
 	wget https://remarkableapp.github.io/files/remarkable_1.87_all.deb -P ${installDir}
 	sudo gdebi -n ${installDir}/remarkable_1.87_all.deb
-	wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v2.0.1/messengerfordesktop-2.0.1-linux-amd64.deb -P ${installDir}
-	sudo gdebi -n ${installDir}/messengerfordesktop-2.0.1-linux-amd64.deb
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	cp ./appLauncher/DropboxFolder.desktop ~/.local/share/applications
