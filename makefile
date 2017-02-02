@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder aptPackage ppaRepo ppaPackage third_party config
 
-third_party: deb_run autojump pip git-extra gcin streamlink-twitch-gui
+third_party: deb_run pip git-extra gcin streamlink-twitch-gui
 
 config:dotfiles settings
 
@@ -63,12 +63,6 @@ deb_run:
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	cp ./appLauncher/DropboxFolder.desktop ~/.local/share/applications
-
-autojump:
-	git clone git://github.com/joelthelion/autojump.git
-	cd autojump && ./install.py
-	# echo "[[ -s /home/scps950707/.autojump/etc/profile.d/autojump.sh ]] && source /home/scps950707/.autojump/etc/profile.d/autojump.sh" >> ~/.bashrc
-	rm -rf autojump/
 
 git-extra:
 	curl -sSL http://git.io/git-extras-setup | sudo bash /dev/stdin
