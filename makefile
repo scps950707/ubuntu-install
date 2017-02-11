@@ -23,8 +23,7 @@ ppaPackage:
 	sudo apt -y install `cat ppaPackage`
 
 pip:
-	pip install streamlink
-	pip install thefuck
+	pip install `cat pipPackage`
 
 ppaRepo:
 	sudo apt-add-repository -y ppa:danielrichter2007/grub-customizer

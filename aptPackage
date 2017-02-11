@@ -5,6 +5,7 @@ cmake-qt-gui
 colordiff
 compizconfig-settings-manager
 compiz-plugins
+cppcheck
 dconf-editor
 dos2unix
 enca
