@@ -2,7 +2,7 @@ currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
 
-all:folder aptPackage ppaRepo ppaPackage third_party config
+all:folder apt ppaRepo ppa third_party config
 
 third_party: deb_run pip git-extra gcin streamlink-twitch-gui
 
@@ -13,17 +13,17 @@ folder:
 	mkdir $(githubDir) -p
 
 update:
-	sudo apt -y install `cat aptPackage`
-	sudo apt -y install `cat ppaPackage`
+	sudo apt -y install `cat ./package/apt`
+	sudo apt -y install `cat ./package/ppa`
 
-aptPackage:
-	sudo apt -y install `cat aptPackage`
+apt:
+	sudo apt -y install `cat ./package/apt`
 
-ppaPackage:
-	sudo apt -y install `cat ppaPackage`
+ppa:
+	sudo apt -y install `cat ./package/ppa`
 
 pip:
-	pip install `cat pipPackage`
+	pip install `cat ./package/pip`
 
 ppaRepo:
 	sudo apt-add-repository -y ppa:danielrichter2007/grub-customizer
