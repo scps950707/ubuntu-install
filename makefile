@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder apt ppaRepo ppa third_party config
 
-third_party: deb_run pip git-extra gcin streamlink-twitch-gui
+third_party: deb_run pip gcin streamlink-twitch-gui
 
 config:dotfiles settings
 
@@ -62,9 +62,6 @@ deb_run:
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	cp ./appLauncher/DropboxFolder.desktop ~/.local/share/applications
-
-git-extra:
-	curl -sSL http://git.io/git-extras-setup | sudo bash /dev/stdin
 
 streamlink-twitch-gui:
 	( cd ~ && \
