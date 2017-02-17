@@ -6,6 +6,7 @@ colordiff
 compizconfig-settings-manager
 compiz-plugins
 cppcheck
+curl
 dconf-editor
 dos2unix
 enca
