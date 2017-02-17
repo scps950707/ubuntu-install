@@ -2,11 +2,9 @@ currentDir=$(PWD)
 installDir=~/install
 githubDir=~/github
 
-all:folder apt ppaRepo ppa third_party config
+all:folder apt ppaRepo ppa third_party settings
 
 third_party: deb_run pip gcin streamlink-twitch-gui
-
-config:dotfiles settings
 
 folder:
 	mkdir $(installDir) -p
@@ -72,12 +70,6 @@ streamlink-twitch-gui:
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update
-
-dotfiles:
-	( cd $(githubDir) && \
-		git clone git@github.com:scps950707/dotfiles.git && \
-		cd dotfiles && \
-		make )
 
 settings:
 	# brightness and lock
