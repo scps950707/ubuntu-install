@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder apt ppaRepo ppa third_party settings
 
-third_party: deb_run pip gcin streamlink-twitch-gui
+third_party: deb_run getpip pip gcin streamlink-twitch-gui
 
 folder:
 	mkdir $(installDir) -p
@@ -21,7 +21,10 @@ ppa:
 	sudo apt -y install `cat ./package/ppa`
 
 pip:
-	pip install `cat ./package/pip`
+	pip install `cat ./package/pip` --user
+
+getpip:
+	( cd $(installDir) && wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py --user )
 
 ppaRepo:
 	sudo apt-add-repository -y ppa:danielrichter2007/grub-customizer
