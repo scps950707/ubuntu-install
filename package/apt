@@ -20,6 +20,7 @@ kolourpaint4
 p7zip-full
 python3-dev
 python-dev
+shellcheck
 shutter
 silversearcher-ag
 synaptic
