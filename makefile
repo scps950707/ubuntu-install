@@ -46,8 +46,6 @@ gcin:
 deb_run:
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ${installDir}
 	sudo gdebi -n ${installDir}/google-chrome-stable_current_amd64.deb
-	wget https://remarkableapp.github.io/files/remarkable_1.87_all.deb -P ${installDir}
-	sudo gdebi -n ${installDir}/remarkable_1.87_all.deb
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	cp ./appLauncher/DropboxFolder.desktop ~/.local/share/applications
