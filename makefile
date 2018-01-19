@@ -4,7 +4,7 @@ githubDir=~/github
 
 all:folder apt ppaRepo ppa third_party settings
 
-third_party: deb_run getpip pip gcin streamlink-twitch-gui
+third_party: deb_run getpip pip gcin
 
 folder:
 	mkdir $(installDir) -p
@@ -63,13 +63,6 @@ deb_run:
 	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O ${installDir}/dropbox_2015.10.28_amd64.deb
 	sudo gdebi -n ${installDir}/dropbox_2015.10.28_amd64.deb
 	cp ./appLauncher/DropboxFolder.desktop ~/.local/share/applications
-
-streamlink-twitch-gui:
-	( cd ~ && \
-	wget `curl -s https://api.github.com/repos/streamlink/streamlink-twitch-gui/releases | grep 'browser_download_url.*linux64.tar.gz'| head -n 1 | cut -d '"' -f 4` -O streamlink-twitch-gui-linux64.tar.gz && \
-	tar xvzf streamlink-twitch-gui-linux64.tar.gz && \
-	cd streamlink-twitch-gui && \
-	./add-menuitem.sh )
 
 homefoldername_to_eng:
 	LANG=C xdg-user-dirs-gtk-update

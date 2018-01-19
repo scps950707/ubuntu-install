@@ -1,6 +1,5 @@
 autopep8
 cmakelint
 flake8
-streamlink
 thefuck
 vim-vint
