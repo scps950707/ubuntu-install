@@ -35,18 +35,6 @@ ppaRepo:
 	sudo add-apt-repository -y ppa:gerardpuig/ppa
 	sudo apt update
 
-tint2:
-	sudo apt -y install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libgtk2.0-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev librsvg2-dev libstartup-notification0-dev
-	( cd $(githubDir) && \
-	git clone https://gitlab.com/o9000/tint2.git && \
-	cd tint2 && \
-	mkdir build && \
-	cd build && \
-	cmake .. && \
-	make && \
-	sudo make install )
-	cp /usr/local/share/applications/tint2.desktop ~/.config/autostart/
-
 gcin:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
 	sudo sh -c "echo \"deb http://hyperrate.com/gcin-ubuntu1604 eliu release\" > /etc/apt/sources.list.d/gcin.list"
