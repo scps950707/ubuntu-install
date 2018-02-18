@@ -12,6 +12,7 @@ dos2unix
 enca
 exuberant-ctags
 filezilla
+gawk
 gdebi
 git-extras
 htop
