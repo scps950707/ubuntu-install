@@ -1,10 +1,7 @@
 autojump
-bleachbit
 cmake
 cmake-qt-gui
 colordiff
-compizconfig-settings-manager
-compiz-plugins
 cppcheck
 cscope
 curl
@@ -13,11 +10,12 @@ dos2unix
 enca
 exuberant-ctags
 filezilla
+fonts-firacode
 gawk
 gdebi
 git-extras
+gnome-tweak-tool
 htop
-indicator-keylock
 indicator-multiload
 kazam
 p7zip-full
@@ -30,7 +28,6 @@ silversearcher-ag
 synaptic
 tmux
 tree
-unity-tweak-tool
 unrar
 valgrind
 vlc
